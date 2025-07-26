@@ -4,9 +4,11 @@ const layout = 'default';
 </script>
 
 <template>
-    <NuxtLayout :name="layout">
-        <NuxtPage/>
-    </NuxtLayout>
+    <UApp>
+        <NuxtLayout :name="layout">
+            <NuxtPage/>
+        </NuxtLayout>
+    </UApp>
 </template>
 
 <style scoped>
