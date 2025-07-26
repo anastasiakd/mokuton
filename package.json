@@ -13,9 +13,13 @@
     "@nuxt/content": "^3.6.3",
     "@nuxt/eslint": "^1.7.1",
     "@nuxt/test-utils": "^3.19.2",
-    "eslint": "^9.32.0",
     "nuxt": "^4.0.1",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.2.2",
+    "eslint": "^9.32.0",
+    "eslint-plugin-vue": "^10.3.0"
   }
 }

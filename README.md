@@ -1,75 +1,24 @@
-# Nuxt Minimal Starter
+# Сайт для мастерской по дереву Mokuton
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- **Описание**: Приложение для мастерской по дереву.
+- **Функционал**:
+    - Аутентификация на сайте (сохранение данных в localStorage или Firebase).
+    - Каталог изделий (данные будут получаться из статичного json-файла).
+    - Корзина: добавление изделий из каталога и оформление заказа (данные о заказе будут отправляться на email менеджеру).
+    - Создание заявки на заказ изделия не из каталога (заполнение заявки и отправка на email менеджеру).
+    - Контакты.
+- **Технологии**: Vue 3, Vite, Composition API, Pinia, Vue Router, VueUse. _Возможно_: _PrimeVue, Firebase, TypeScript_.
+- **Реалистичность**: Простой сайт со статичными данными. Реализуемо соло за 4–6 недель.
+- **Масштабируемость**: Добавление админки для менеджера: обработка заказов, выгрузка новых изделий в каталог, создание рассылок и постов.
+- **Почему перспективно**: Сайты-визитки и интернет-магазины популярны, поэтому навыки будут полезны.  
+  **_Бонус для покупателя_**: можно на сайте подробно ознакомиться с производителем, изделиями и потом оформить заказ на маркетплейсе, но также можно оформить заказ напрямую у производителя.  
+  **_Бонус для продавца_**: Дополнительная реклама и дополнительный источник заказов.
 
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Этапы реализации:
+1. Создание каталога изделий. **22.07 - 30.07**
+2. Корзина. **01.08 - 03.08**
+3. Заявка на индивидуальный заказ. **04.08 - 06.08**
+4. Контакты. **07.08 - 09.08**
+5. Аутентификация на сайте. **26.08 - 28.08**
+6. Отладка, правки. **29.08 - 10.09**
+7. 

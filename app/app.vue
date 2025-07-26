@@ -1,6 +1,13 @@
+<script setup lang="ts">
+// Лэйаут страниц по-умолчанию
+const layout = 'default';
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+    <NuxtLayout :name="layout">
+        <NuxtPage/>
+    </NuxtLayout>
 </template>
+
+<style scoped>
+</style>
