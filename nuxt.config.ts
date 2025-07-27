@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     ],
 
     alias: {
+        // TODO: не работает
         'images': fileURLToPath(new URL('./assets/images', import.meta.url)),
     },
 

@@ -3,10 +3,12 @@
 </script>
 
 <template>
-    <div>
+    <div class="flex flex-col min-h-screen">
         <BaseHeader/>
 
-        <slot/>
+        <main class="grow">
+            <slot/>
+        </main>
 
         <BaseFooter/>
     </div>
