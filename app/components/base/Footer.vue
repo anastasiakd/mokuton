@@ -1,8 +1,9 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
-    <CatalogPage/>
+    Подвал
 </template>
 
 <style scoped>

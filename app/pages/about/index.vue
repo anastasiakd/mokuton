@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <CatalogPage/>
+    <AboutPage/>
 </template>
 
 <style scoped>

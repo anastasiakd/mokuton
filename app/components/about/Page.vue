@@ -2,7 +2,9 @@
 </script>
 
 <template>
-    <CatalogPage/>
+    <section>
+        About
+    </section>
 </template>
 
 <style scoped>

@@ -1,8 +1,15 @@
+<script setup lang="ts">
+definePageMeta({
+    middleware: () => {
+        return navigateTo('/catalog');
+    }
+});
+</script>
+
 <template>
-    <div>
-        <h1>Welcome to the homepage</h1>
-        <AppAlert>
-            This is an auto-imported component
-        </AppAlert>
-    </div>
+    <CatalogPage/>
 </template>
+
+<style scoped>
+
+</style>

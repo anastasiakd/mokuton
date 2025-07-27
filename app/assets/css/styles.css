@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+    --ui-primary: #E54040;
+    --ui-secondary: #AAAAAA;
+    --ui-success: #E54040;
+    --ui-info: #AAAAAA;
+    --ui-warning: #E2A329;
+    --ui-error: #FD7373;
+}

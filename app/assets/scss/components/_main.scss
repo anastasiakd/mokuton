@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as *;
+
+html {
+    background-color: #fff;
+    font-size: $font-size;
+}
