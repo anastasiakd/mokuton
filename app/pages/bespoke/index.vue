@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    Customize
+    <BespokePage/>
 </template>
 
 <style scoped>

@@ -5,8 +5,8 @@ const items = computed(() => [
         to: '/catalog',
     },
     {
-        label: $t('nav-customize'),
-        to: '/customize',
+        label: $t('nav-bespoke'),
+        to: '/bespoke',
     },
     {
         label: $t('nav-about'),
