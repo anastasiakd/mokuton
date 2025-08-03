@@ -13,6 +13,13 @@ function formatPrice(price: number) {
     return `${numberUtils.formatPrice(price)} ₽`;
 }
 
+function goToProduct(product: CatalogItem) {
+    navigateTo({
+        name: 'catalog-product-id',
+        params: {id: product.id},
+    });
+}
+
 getList();
 </script>
 
@@ -24,6 +31,7 @@ getList();
                     v-for="product in products"
                     :key="product.id"
                     class="product cursor-pointer"
+                    @click="goToProduct(product)"
                 >
                     <div>
                         <img
@@ -34,9 +42,9 @@ getList();
                     </div>
 
                     <h3 class="mt-2 mb-2">
-                            <span class="product-title">
-                                {{ product.name }}
-                            </span>
+                        <span class="product-title">
+                            {{ product.name }}
+                        </span>
                     </h3>
 
                     <div>

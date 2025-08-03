@@ -1,5 +1,4 @@
 import {defineStore} from 'pinia';
-import type {CatalogItem} from '#shared/types/CatalogItem';
 
 export const useCatalogStore = defineStore('catalog', () => {
     const items = ref<CatalogItem[]>([]);
@@ -12,9 +11,18 @@ export const useCatalogStore = defineStore('catalog', () => {
         }
     }
 
+    async function getProduct(id: string) {
+        const {data} = await useAsyncData<CatalogProductItem>(
+            `catalog-product-${id}`,
+            () => $fetch(`/api/product/${id}`),
+        );
+        return data.value;
+    }
+
     return {
         items,
         isEmpty,
         getList,
+        getProduct,
     };
 });

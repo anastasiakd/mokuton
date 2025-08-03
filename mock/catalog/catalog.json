@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Детская кроватка-вигвам",
+    "price": 25000,
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/001.jpg"
+  },
+  {
+    "id": "table",
+    "name": "Письменный стол MokuTable.1",
+    "price": 15000,
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Тумба с 2 ящиками",
+    "price": 6900,
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/003.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Шкафик для ванной комнаты",
+    "price": 15000,
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/004.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Шкафик для ванной комнаты",
+    "price": 15000,
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/005.jpg"
+  }
+]

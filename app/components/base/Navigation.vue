@@ -1,12 +1,19 @@
 <script setup lang="ts">
+const route = useRoute();
+
 const items = computed(() => [
     {
         label: $t('nav-catalog'),
         to: '/catalog',
+        active: route.path.startsWith('/catalog'),
     },
     {
         label: $t('nav-bespoke'),
         to: '/bespoke',
+    },
+    {
+        label: $t('nav-reviews'),
+        to: '/reviews',
     },
     {
         label: $t('nav-about'),

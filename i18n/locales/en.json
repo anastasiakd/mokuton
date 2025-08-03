@@ -1,5 +1,7 @@
 {
   "nav-catalog": "catalog",
   "nav-bespoke": "bespoke",
-  "nav-about": "about"
+  "nav-reviews": "reviews",
+  "nav-about": "about",
+  "catalog_product-suits": "Check if it suits you:"
 }
