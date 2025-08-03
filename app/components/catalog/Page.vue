@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import {numberUtils} from '~~/shared/utils';
+// import {numberUtils} from '~~/shared/utils';
+
+// const {formatPrice} = numberUtils;
 
 const catalogStore = useCatalogStore();
 const {
@@ -8,10 +10,6 @@ const {
 const {
     getList,
 } = catalogStore;
-
-function formatPrice(price: number) {
-    return `${numberUtils.formatPrice(price)} ₽`;
-}
 
 function goToProduct(product: CatalogItem) {
     navigateTo({
@@ -48,7 +46,7 @@ getList();
                     </h3>
 
                     <div>
-                        {{ formatPrice(product.price) }}
+<!--                        {{ formatPrice(product.price) }}-->
                     </div>
                 </li>
             </ul>

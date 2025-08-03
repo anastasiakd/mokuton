@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const {locale: activeLocale, locales, setLocale} = useI18n();
+
+watch(activeLocale, async () => {
+    window.location.reload();
+});
 </script>
 
 <template>

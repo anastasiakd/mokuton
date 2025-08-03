@@ -1,6 +1,8 @@
+import type {Price} from './Price';
+
 export type CatalogItem = {
     id: string;
     name: string;
-    price: number;
+    price: Price;
     icon: string,
 };

@@ -1,16 +1,14 @@
 <script setup lang="ts">
 import {numberUtils} from '~~/shared/utils';
 
+const {formatPrice} = numberUtils;
+
 const {id} = defineProps({
     id: {
         type: String,
         required: true,
     },
 });
-
-function formatPrice(price: number) {
-    return `${numberUtils.formatPrice(price)} ₽`;
-}
 
 const catalogStore = useCatalogStore();
 const {

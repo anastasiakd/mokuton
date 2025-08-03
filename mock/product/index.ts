@@ -1,7 +1,18 @@
-import table from './table.json';
+import tableRu from './table_ru.json';
+import tableEn from './table_en.json';
 
-const successResponses : Record<string, string> = {
-    table: JSON.stringify(table),
+const successResponses : Record<string, Record<string, object>> = {
+    table: {
+        ru: tableRu,
+        en: tableEn,
+    },
 };
 
-export default successResponses;
+const getSuccessResponse = (locale: string, id: string) : string => {
+    const response = successResponses[id][locale] || successResponses[id].en;
+    return JSON.stringify(response);
+};
+
+export default {
+    getSuccessResponse,
+};

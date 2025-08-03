@@ -1,7 +1,10 @@
 {
   "id": "table",
-  "name": "Письменный стол MokuTable.1",
-  "price": 15000,
+  "name": "Desk MokuTable.1",
+  "price": {
+    "amount": 188,
+    "unit": "$"
+  },
   "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
   "images": [
     "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
