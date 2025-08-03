@@ -1,16 +1,22 @@
-import tableRu from './table_ru.json';
-import tableEn from './table_en.json';
-
-const successResponses : Record<string, Record<string, object>> = {
+const successResponses: Record<string, Record<string, object>> = {
     table: {
-        ru: tableRu,
-        en: tableEn,
+        ru: import('./table_ru.json'),
+        en: import('./table_en.json'),
     },
+    honeycombs_bookcase: {
+        ru: import('./honeycombs_bookcase_ru.json'),
+        en: import('./honeycombs_bookcase_en.json'),
+    }
 };
 
-const getSuccessResponse = (locale: string, id: string) : string => {
-    const response = successResponses[id][locale] || successResponses[id].en;
-    return JSON.stringify(response);
+const getSuccessResponse = async (locale: string, id: string): Promise<string> => {
+    const response = successResponses[id];
+    console.log(response);
+    if (response) {
+        return Promise.resolve(response[locale] || response.en)
+            .then(JSON.stringify);
+    }
+    return Promise.resolve('');
 };
 
 export default {

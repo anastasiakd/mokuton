@@ -1,18 +1,18 @@
 [
   {
-    "id": "1",
-    "name": "Детская кроватка-вигвам",
+    "id": "honeycombs_bookcase",
+    "name": "Шкаф \"Пчелиные соты\"",
     "price": {
-      "amount": 25000,
+      "amount": 350,
       "unit": "$"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/001.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg"
   },
   {
     "id": "table",
     "name": "Desk MokuTable.1",
     "price": {
-      "amount": 188,
+      "amount": 200,
       "unit": "$"
     },
     "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg"

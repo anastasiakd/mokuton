@@ -58,7 +58,7 @@ getProduct(id)
                     {{ product.description }}
                 </p>
 
-                <template v-if="product.suits">
+                <template v-if="product.suits?.length">
                     <p>
                         {{ $t('catalog_product-suits') }}
                     </p>

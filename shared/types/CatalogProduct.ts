@@ -1,6 +1,6 @@
 import type {Price} from './Price';
 
-export type CatalogItem = {
+export type CatalogProduct = {
     id: string;
     name: string;
     price: Price;
