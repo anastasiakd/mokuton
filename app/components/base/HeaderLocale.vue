@@ -9,7 +9,7 @@ const {locale: activeLocale, locales, setLocale} = useI18n();
             :key="locale.code"
             as="button"
             class="uppercase cursor-pointer"
-            :class="{'text-primary': locale.code === activeLocale}"
+            :class="{'text-accent': locale.code === activeLocale}"
             @click="setLocale(locale.code)"
         >
             {{ locale.code }}

@@ -5,10 +5,28 @@ html {
     font-size: $font-size;
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 hr {
     background-color: #333;
     border: 0;
     box-sizing: content-box;
     height: 2px;
     width: 100%;
+}
+
+.text-accent {
+    color: $accent-color;
+}
+
+.text-alt {
+    color: $alt-color;
+}
+
+.page-content {
+    display: grid;
+    grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 68.75em) minmax(1.5rem, 1fr);
 }
