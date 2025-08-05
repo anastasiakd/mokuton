@@ -1,26 +1,24 @@
 <script setup lang="ts">
-import {numberUtils} from '~~/shared/utils';
+import {numberUtils} from '#shared/utils';
 
 const {formatPrice} = numberUtils;
 
-const {id} = defineProps({
-    id: {
-        type: String,
+const {product} = defineProps({
+    product: {
+        type: Object as PropType<ProductDetail>,
         required: true,
     },
 });
 
-const catalogStore = useCatalogStore();
+const basketStore = useBasketStore();
 const {
-    getProduct,
-} = catalogStore;
+    add: addToBasket,
+} = basketStore;
 
-const product = ref();
-
-getProduct(id)
-    .then(result => {
-        product.value = result;
-    });
+function onBuy() {
+    addToBasket(product);
+    navigateTo({name: 'basket'});
+}
 </script>
 
 <template>
@@ -36,12 +34,13 @@ getProduct(id)
             <hr>
         </div>
 
-        <div class="pt-8">
+        <div class="pt-8 pb-8">
             <div class="product__gallery">
                 <UCarousel
                     v-slot="{ item }"
                     :items="product.images"
-                    :ui="{ item: 'basis-auto' }"
+                    dots
+                    :ui="{item: 'basis-auto'}"
                     class="w-full mx-auto"
                 >
                     <img
@@ -52,7 +51,7 @@ getProduct(id)
             </div>
         </div>
 
-        <div class="product__content pt-8">
+        <div class="product__content pt-8 pb-8">
             <div class="product__description">
                 <p>
                     {{ product.description }}
@@ -78,6 +77,17 @@ getProduct(id)
                 <h1>
                     {{ formatPrice(product.price) }}
                 </h1>
+
+                <UButton
+                    trailing-icon="i-lucide-arrow-right"
+                    size="xl"
+                    block
+                    square
+                    class="cursor-pointer mt-2"
+                    @click="onBuy"
+                >
+                    {{ $t('button-buy') }}
+                </UButton>
             </div>
         </div>
     </div>

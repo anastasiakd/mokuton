@@ -1,19 +1,14 @@
 <script setup lang="ts">
-const catalogStore = useCatalogStore();
+const basketStore = useBasketStore();
 const {
     items: products,
     isEmpty,
-} = storeToRefs(catalogStore);
-const {
-    getList,
-} = catalogStore;
-
-getList();
+} = storeToRefs(basketStore);
 </script>
 
 <template>
-    <div class="products-container">
-        <Catalog
+    <div class="basket-container">
+        <Basket
             v-if="!isEmpty"
             :products="products"
         />
@@ -21,7 +16,7 @@ getList();
 </template>
 
 <style lang="scss" scoped>
-.products {
+.basket {
     &-container {
         grid-column: 2;
     }

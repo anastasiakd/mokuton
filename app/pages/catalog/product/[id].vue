@@ -4,7 +4,7 @@ const productId: string = route.params.id as string;
 </script>
 
 <template>
-    <CatalogProductPage
+    <ProductPage
         :id="productId"
     />
 </template>

@@ -11,7 +11,6 @@ const successResponses: Record<string, Record<string, object>> = {
 
 const getSuccessResponse = async (locale: string, id: string): Promise<string> => {
     const response = successResponses[id];
-    console.log(response);
     if (response) {
         return Promise.resolve(response[locale] || response.en)
             .then(JSON.stringify);

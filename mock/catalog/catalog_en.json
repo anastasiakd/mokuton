@@ -1,7 +1,7 @@
 [
   {
     "id": "honeycombs_bookcase",
-    "name": "Шкаф \"Пчелиные соты\"",
+    "name": "Bookcase \"Honeycomb\"",
     "price": {
       "amount": 350,
       "unit": "$"

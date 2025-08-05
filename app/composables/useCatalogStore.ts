@@ -1,7 +1,5 @@
 import {defineStore} from 'pinia';
 
-const getLang = () => useI18n().locale.value;
-
 export const useCatalogStore = defineStore('catalog', () => {
     const items = ref<CatalogProduct[]>([]);
     const isEmpty = computed(() => items.value.length === 0);
@@ -9,7 +7,7 @@ export const useCatalogStore = defineStore('catalog', () => {
     async function getList() {
         const {data} = await useAsyncData<CatalogProduct[]>(
             'catalog-list',
-            () => $fetch(`/api/catalog?lang=${getLang()}`),
+            () => $fetch(useRequestQuery('/api/catalog')),
         );
         if (data.value) {
             items.value = data.value;
@@ -19,7 +17,7 @@ export const useCatalogStore = defineStore('catalog', () => {
     async function getProduct(id: string) {
         const {data} = await useAsyncData<ProductDetail>(
             `catalog-product-${id}`,
-            () => $fetch(`/api/product/${id}?lang=${getLang()}`),
+            () => $fetch(useRequestQuery(`/api/product/${id}`)),
         );
         return data.value;
     }

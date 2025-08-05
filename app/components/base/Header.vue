@@ -14,12 +14,14 @@
 
         <BaseNavigation/>
 
+        <BaseUserMenu/>
+
         <BaseHeaderLocale/>
     </header>
 </template>
 
 <style lang="scss" scoped>
 .site-header {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr 3.5em auto;
 }
 </style>

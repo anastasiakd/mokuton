@@ -7,7 +7,7 @@ const successResponses : Record<string, object> = {
 };
 
 const getSuccessResponse = (locale: string) : string => {
-    const response = successResponses[locale] || successResponses.EN;
+    const response = successResponses[locale] || successResponses.en;
     return JSON.stringify(response);
 };
 

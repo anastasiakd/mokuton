@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import CatalogItem from './CatalogItem.vue';
-
-const catalogStore = useCatalogStore();
-const {
-    items: products,
-} = storeToRefs(catalogStore);
-const {
-    getList,
-} = catalogStore;
-
-getList();
+defineProps({
+    products: {
+        type: Array<CatalogProduct>,
+        required: true,
+    }
+});
 </script>
 
 <template>

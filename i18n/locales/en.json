@@ -3,5 +3,9 @@
   "nav-bespoke": "bespoke",
   "nav-reviews": "reviews",
   "nav-about": "about",
-  "catalog_product-suits": "Check if it suits you:"
+  "catalog_product-suits": "Check if it suits you:",
+  "button-buy": "buy",
+  "basket-table-column-product": "Product",
+  "basket-table-column-price": "Price",
+  "basket-table-column-subtotal": "Subtotal"
 }

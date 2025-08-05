@@ -3,5 +3,9 @@
   "nav-bespoke": "под заказ",
   "nav-reviews": "отзывы",
   "nav-about": "о нас",
-  "catalog_product-suits": "Проверьте, подходит ли вам:"
+  "catalog_product-suits": "Проверьте, подходит ли вам:",
+  "button-buy": "Купить",
+  "basket-table-column-product": "Товар",
+  "basket-table-column-price": "Стоимость",
+  "basket-table-column-subtotal": "Итого"
 }
