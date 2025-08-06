@@ -35,6 +35,24 @@ hr {
     color: $alt-color;
 }
 
+.text-highlight {
+    border-bottom: 2px solid $accent-color;
+    transition: all 0.25s ease-out;
+
+    &:hover {
+        background-color: $accent-bg;
+    }
+}
+
+.block-highlight {
+    border: 2px solid transparent;
+    transition: all 0.25s ease-out;
+
+    &:hover {
+        border-color: $accent-color;
+    }
+}
+
 .page-content {
     display: grid;
     grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 68.75em) minmax(1.5rem, 1fr);

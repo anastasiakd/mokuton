@@ -15,6 +15,17 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
     ],
 
+    nitro: {
+        routeRules: {
+            // TODO: настроить прокси для внешних изображений
+            '/image/**': {
+                proxy: {
+                    to: 'http://localhost:8000/assets/images/external/**',
+                },
+            },
+        },
+    },
+
     alias: {
         // TODO: не работает
         'images': fileURLToPath(new URL('./assets/images', import.meta.url)),
@@ -40,6 +51,6 @@ export default defineNuxtConfig({
         locales: [
             { code: 'en', name: 'English', file: 'en.json' },
             { code: 'ru', name: 'Русский', file: 'ru.json' }
-        ]
+        ],
     },
 });

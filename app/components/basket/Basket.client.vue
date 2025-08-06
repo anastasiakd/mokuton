@@ -4,12 +4,21 @@ import {numberUtils} from '#shared/utils';
 
 const UInputNumber = resolveComponent('UInputNumber');
 
-defineProps({
-    products: {
-        type: Array<BasketProduct>,
-        required: true,
-    }
-});
+const basketStore = useBasketStore();
+const {
+    items: products,
+    isEmpty,
+} = storeToRefs(basketStore);
+const {
+    setProductCount,
+} = basketStore;
+
+function goToCatalogProduct(basketProduct: BasketProduct) {
+    navigateTo({
+        name: 'catalog-product-id',
+        params: {id: basketProduct.id},
+    });
+}
 
 const columns: TableColumn<BasketProduct>[] = [
     {
@@ -19,10 +28,14 @@ const columns: TableColumn<BasketProduct>[] = [
             return h('div', {class: 'flex items-center gap-3'}, [
                 h('img', {
                     src: row.original.icon,
-                    class: 'max-w-37',
+                    class: 'max-w-37 cursor-pointer block-highlight',
+                    onClick: () => goToCatalogProduct(row.original),
                 }),
-                h('div', undefined, [
-                    h('p', {class: 'basket-product-title'}, row.original.name),
+                h('div', {
+                    class: 'text-highlight cursor-pointer',
+                    onClick: () => goToCatalogProduct(row.original),
+                }, [
+                    h('h3', {class: 'basket-product-title'}, row.original.name),
                 ]),
             ]);
         },
@@ -39,9 +52,13 @@ const columns: TableColumn<BasketProduct>[] = [
             return h('div', {class: ''}, [
                 h(UInputNumber, {
                     modelValue: row.original.count,
+                    min: 1,
                     orientation: 'vertical',
                     color: 'neutral',
                     variant: 'soft',
+                    'onUpdate:modelValue': (newCount: number) => {
+                        setProductCount(row.original, newCount);
+                    },
                 }),
             ]);
         },
@@ -61,24 +78,27 @@ const columns: TableColumn<BasketProduct>[] = [
 
 <template>
     <UTable
+        v-if="!isEmpty"
         :data="products"
         :columns="columns"
         class="flex-1"
     />
+
+    <div v-else>
+        Корзина пуста
+    </div>
 </template>
 
 <style lang="scss" scoped>
 @use "~/assets/scss/abstracts/variables" as *;
 
-.basket {
-    &-product {
-        &-title {
-            border-bottom: 2px solid $accent-color;
-            transition: all 0.25s ease-out;
+.basket-container {
+    h3 {
+        border-bottom: 2px solid $accent-color;
+        transition: all 0.25s ease-out;
 
-            &:hover {
-                background-color: $accent-bg;
-            }
+        &:hover {
+            background-color: $accent-bg;
         }
     }
 }

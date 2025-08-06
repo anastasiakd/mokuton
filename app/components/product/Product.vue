@@ -9,16 +9,6 @@ const {product} = defineProps({
         required: true,
     },
 });
-
-const basketStore = useBasketStore();
-const {
-    add: addToBasket,
-} = basketStore;
-
-function onBuy() {
-    addToBasket(product);
-    navigateTo({name: 'basket'});
-}
 </script>
 
 <template>
@@ -78,16 +68,7 @@ function onBuy() {
                     {{ formatPrice(product.price) }}
                 </h1>
 
-                <UButton
-                    trailing-icon="i-lucide-arrow-right"
-                    size="xl"
-                    block
-                    square
-                    class="cursor-pointer mt-2"
-                    @click="onBuy"
-                >
-                    {{ $t('button-buy') }}
-                </UButton>
+                <ProductBuy :product="product"/>
             </div>
         </div>
     </div>

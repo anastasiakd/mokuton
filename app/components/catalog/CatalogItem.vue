@@ -32,7 +32,7 @@ function goToProduct() {
         </div>
 
         <h3 class="mt-2 mb-2">
-            <span class="product-title">
+            <span class="text-highlight">
                 {{ product.name }}
             </span>
         </h3>
@@ -52,15 +52,6 @@ function goToProduct() {
 
         img {
             width: 100%;
-        }
-    }
-
-    &-title {
-        border-bottom: 2px solid $accent-color;
-        transition: all 0.25s ease-out;
-
-        &:hover {
-            background-color: $accent-bg;
         }
     }
 }

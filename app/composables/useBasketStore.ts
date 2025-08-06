@@ -11,14 +11,29 @@ export const useBasketStore = defineStore('basket', () => {
         }, 0)
     ));
 
+    function incrementProduct(basketProduct: BasketProduct) {
+        basketProduct.count += 1;
+    }
+
+    function decrementProduct(basketProduct: BasketProduct) {
+        basketProduct.count -= 1;
+    }
+
+    function setProductCount(product: BasketProduct, count: number) {
+        const basketProduct = items.value.find(item => item.id === product.id);
+        if (basketProduct) {
+            basketProduct.count = count;
+        }
+    }
+
     function add(product: CatalogProduct) {
-        const productIndex = items.value.findIndex(item => item.id === product.id);
-        if (productIndex === -1) {
+        const basketProduct = items.value.find(item => item.id === product.id);
+        if (basketProduct) {
+            // В корзине уже есть такой товар => увеличиваем количество
+            incrementProduct(basketProduct);
+        } else {
             // Нет в корзине такого товара => добавляем
             items.value.push({...product, count: 1});
-        } else {
-            // В корзине уже есть такой товар => увеличиваем количество
-            items.value[productIndex].count += 1;
         }
     }
 
@@ -36,5 +51,8 @@ export const useBasketStore = defineStore('basket', () => {
 
         add,
         remove,
+        incrementProduct,
+        decrementProduct,
+        setProductCount,
     };
 });

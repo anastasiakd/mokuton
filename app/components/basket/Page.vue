@@ -1,17 +1,9 @@
 <script setup lang="ts">
-const basketStore = useBasketStore();
-const {
-    items: products,
-    isEmpty,
-} = storeToRefs(basketStore);
 </script>
 
 <template>
     <div class="basket-container">
-        <Basket
-            v-if="!isEmpty"
-            :products="products"
-        />
+        <Basket/>
     </div>
 </template>
 
