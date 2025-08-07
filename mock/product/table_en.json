@@ -3,7 +3,7 @@
   "name": "Desk MokuTable.1",
   "price": {
     "amount": 200,
-    "unit": "$"
+    "currency": "USD"
   },
   "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
   "images": [

@@ -1,4 +1,5 @@
 import type {Price} from '#shared/types/Price';
+import currency from '../currency';
 
 const formatPrice = (price: Price) => {
     if (!price) {
@@ -8,7 +9,10 @@ const formatPrice = (price: Price) => {
     const formattedAmount = price.amount
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-    return `${formattedAmount} ${price.unit}`;
+
+    const formattedCurrency = currency.getCurrencySign(price.currency);
+
+    return `${formattedAmount} ${formattedCurrency}`;
 };
 
 export default {

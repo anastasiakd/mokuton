@@ -4,14 +4,24 @@ import {numberUtils} from '#shared/utils';
 
 const UInputNumber = resolveComponent('UInputNumber');
 
+const emit = defineEmits(['loaded']);
+
 const basketStore = useBasketStore();
 const {
-    items: products,
+    pending,
+    products,
     isEmpty,
+    totalPrice,
 } = storeToRefs(basketStore);
 const {
+    init: initBasket,
     setProductCount,
+    removeProduct,
 } = basketStore;
+
+onMounted(initBasket);
+
+watch(pending, () => emit('loaded'));
 
 function goToCatalogProduct(basketProduct: BasketProduct) {
     navigateTo({
@@ -20,12 +30,21 @@ function goToCatalogProduct(basketProduct: BasketProduct) {
     });
 }
 
+function goToCatalog() {
+    navigateTo({name: 'catalog'});
+}
+
 const columns: TableColumn<BasketProduct>[] = [
     {
         accessorKey: 'product',
-        header: $t('basket-table-column-product'),
+        header: $t('basket_table-column_product'),
         cell: ({row}) => {
             return h('div', {class: 'flex items-center gap-3'}, [
+                h('div', {
+                    title: $t('basket_table-button_delete'),
+                    class: 'grid bg-neutral-200 w-9 h-9 pb-1 place-content-center rounded-[50%] font-bold cursor-pointer',
+                    onClick: () => removeProduct(row.original),
+                }, 'x'),
                 h('img', {
                     src: row.original.icon,
                     class: 'max-w-37 cursor-pointer block-highlight',
@@ -42,7 +61,7 @@ const columns: TableColumn<BasketProduct>[] = [
     },
     {
         accessorKey: 'price',
-        header: $t('basket-table-column-price'),
+        header: $t('basket_table-column_price'),
         cell: ({row}) => numberUtils.formatPrice(row.original.price)
     },
     {
@@ -65,41 +84,44 @@ const columns: TableColumn<BasketProduct>[] = [
     },
     {
         accessorKey: 'subtotal',
-        header: $t('basket-table-column-subtotal'),
+        header: $t('basket_table-column_subtotal'),
         cell: ({row}) => {
             return numberUtils.formatPrice({
                 amount: row.original.price.amount * row.original.count,
-                unit: row.original.price.unit,
+                currency: row.original.price.currency,
             });
-        }
+        },
+        footer: () => {
+            return numberUtils.formatPrice(totalPrice.value);
+        },
     },
 ];
 </script>
 
 <template>
-    <UTable
-        v-if="!isEmpty"
-        :data="products"
-        :columns="columns"
-        class="flex-1"
-    />
+    <section v-if="!pending && !isEmpty">
+        <UTable
+            :data="products"
+            :columns="columns"
+            class="flex-1"
+        />
 
-    <div v-else>
-        Корзина пуста
-    </div>
+        <div class="grid place-content-end mt-4">
+            <UButton
+                size="xl"
+                block
+                square
+                class="w-auto cursor-pointer mt-1"
+                @click="goToCatalog"
+            >
+                Оформить заказ
+            </UButton>
+        </div>
+
+        <BasketEmpty v-if="!pending && isEmpty"/>
+    </section>
 </template>
 
-<style lang="scss" scoped>
-@use "~/assets/scss/abstracts/variables" as *;
+<style scoped>
 
-.basket-container {
-    h3 {
-        border-bottom: 2px solid $accent-color;
-        transition: all 0.25s ease-out;
-
-        &:hover {
-            background-color: $accent-bg;
-        }
-    }
-}
 </style>

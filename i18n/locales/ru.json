@@ -3,9 +3,15 @@
   "nav-bespoke": "под заказ",
   "nav-reviews": "отзывы",
   "nav-about": "о нас",
-  "catalog_product-suits": "Проверьте, подходит ли вам:",
+
   "button-buy": "Купить",
-  "basket-table-column-product": "Товар",
-  "basket-table-column-price": "Стоимость",
-  "basket-table-column-subtotal": "Итого"
+  "button-catalog": "Перейти в каталог",
+
+  "catalog_product-suits": "Проверьте, подходит ли вам:",
+
+  "basket_empty-title": "Ваша корзина сейчас пуста.",
+  "basket_table-column_product": "Товар",
+  "basket_table-column_price": "Стоимость",
+  "basket_table-column_subtotal": "Итого",
+  "basket_table-button_delete": "Удалить товар из корзины"
 }

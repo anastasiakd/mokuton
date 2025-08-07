@@ -3,7 +3,7 @@
   "name": "Шкаф \"Пчелиные соты\"",
   "price": {
     "amount": 15000,
-    "unit": "₽"
+    "currency": "RUB"
   },
   "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
   "images": [

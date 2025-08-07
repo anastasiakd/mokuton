@@ -8,7 +8,7 @@ const {product} = defineProps({
 
 const basketStore = useBasketStore();
 const {
-    add: addToBasket,
+    addProduct: addToBasket,
 } = basketStore;
 
 function onBuy() {

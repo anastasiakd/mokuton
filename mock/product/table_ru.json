@@ -3,7 +3,7 @@
   "name": "Письменный стол MokuTable.1",
   "price": {
     "amount": 15000,
-    "unit": "₽"
+    "currency": "RUB"
   },
   "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
   "images": [

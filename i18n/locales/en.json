@@ -3,9 +3,15 @@
   "nav-bespoke": "bespoke",
   "nav-reviews": "reviews",
   "nav-about": "about",
+
+  "button-buy": "Buy",
+  "button-catalog": "Go to catalog",
+
   "catalog_product-suits": "Check if it suits you:",
-  "button-buy": "buy",
-  "basket-table-column-product": "Product",
-  "basket-table-column-price": "Price",
-  "basket-table-column-subtotal": "Subtotal"
+
+  "basket_empty-title": "Your cart is currently empty.",
+  "basket_table-column_product": "Product",
+  "basket_table-column_price": "Price",
+  "basket_table-column_subtotal": "Subtotal",
+  "basket_table-button_delete": "Remove product from cart"
 }

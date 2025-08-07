@@ -1,58 +1,107 @@
 import {defineStore} from 'pinia';
-import useUserStorage, {STORAGE_KEYS} from '~/composables/useUserStorage';
+import {currencyUtils} from '#shared/utils';
 
 export const useBasketStore = defineStore('basket', () => {
-    const items = useUserStorage<Array<BasketProduct>>(STORAGE_KEYS.basket, []);
-    const isEmpty = computed(() => items.value.length === 0);
+    const basketStorage = useBasketStorage();
+    const {basketStorageItems} = basketStorage;
+
+    const pending = ref<boolean>(true);
+    const products = ref<BasketProduct[]>([]);
+
+    const isEmpty = computed(() => basketStorageItems.value.length === 0);
+
     const count = computed(() => (
-        items.value.reduce((result, item) => {
+        basketStorageItems.value.reduce((result, item) => {
             result += item.count;
             return result;
         }, 0)
     ));
 
-    function incrementProduct(basketProduct: BasketProduct) {
-        basketProduct.count += 1;
-    }
+    const totalPrice: Ref<Price> = computed(() => {
+        const totalAmount = products.value
+            .reduce((total, item) => {
+                total += item.price.amount * item.count;
+                return total;
+            }, 0);
 
-    function decrementProduct(basketProduct: BasketProduct) {
-        basketProduct.count -= 1;
-    }
+        const totalCurrency = currencyUtils.getLocalizedCurrency(
+            useLocale().locale.value.code,
+        );
+
+        return {
+            amount: totalAmount,
+            currency: totalCurrency?.code,
+        };
+    });
 
     function setProductCount(product: BasketProduct, count: number) {
-        const basketProduct = items.value.find(item => item.id === product.id);
+        const basketProduct = products.value.find(item => item.id === product.id);
         if (basketProduct) {
             basketProduct.count = count;
         }
+
+        basketStorage.setProductCount(product, count);
     }
 
-    function add(product: CatalogProduct) {
-        const basketProduct = items.value.find(item => item.id === product.id);
+    function addProduct(product: CatalogProduct) {
+        const basketProduct = products.value.find(item => item.id === product.id);
         if (basketProduct) {
             // В корзине уже есть такой товар => увеличиваем количество
-            incrementProduct(basketProduct);
+            basketProduct.count += 1;
         } else {
             // Нет в корзине такого товара => добавляем
-            items.value.push({...product, count: 1});
+            products.value.push({...product, count: 1});
         }
+
+        basketStorage.addProduct(product);
     }
 
-    function remove(product: BasketProduct) {
-        const productIndex = items.value.findIndex(item => item.id === product.id);
+    function removeProduct(product: BasketProduct) {
+        const productIndex = products.value.findIndex(item => item.id === product.id);
         if (productIndex >= 0) {
-            items.value.splice(productIndex, 1);
+            products.value.splice(productIndex, 1);
         }
+
+        basketStorage.removeProduct(product);
+    }
+
+    async function getProduct(id: string) {
+        return await $fetch<ProductDetail>(useRequestQuery(`/api/product/${id}`));
+    }
+
+    async function init() {
+        pending.value = true;
+        products.value = [];
+
+        for (let i = 0; i < basketStorageItems.value.length; i += 1) {
+            const storedItem = basketStorageItems.value[i];
+            if (storedItem) {
+                const product = await getProduct(storedItem.id);
+                if (product) {
+                    products.value.push({
+                        id: product.id,
+                        name: product.name,
+                        price: product.price,
+                        icon: product.icon,
+                        count: storedItem.count,
+                    });
+                }
+            }
+        }
+
+        pending.value = false;
     }
 
     return {
-        items,
-        count,
+        pending,
+        products,
         isEmpty,
+        count,
+        totalPrice,
 
-        add,
-        remove,
-        incrementProduct,
-        decrementProduct,
+        addProduct,
+        removeProduct,
         setProductCount,
+        init,
     };
 });
