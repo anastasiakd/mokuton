@@ -35,7 +35,7 @@ const {product} = defineProps({
                 >
                     <img
                         :src="item"
-                        class="rounded-lg w-120 h-90"
+                        class="rounded-lg h-90"
                     >
                 </UCarousel>
             </div>

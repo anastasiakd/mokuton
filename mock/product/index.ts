@@ -6,6 +6,10 @@ const successResponses: Record<string, Record<string, object>> = {
     honeycombs_bookcase: {
         ru: import('./honeycombs_bookcase_ru.json'),
         en: import('./honeycombs_bookcase_en.json'),
+    },
+    nightstand_2_drawers: {
+        ru: import('./nightstand_2_drawers_ru.json'),
+        en: import('./nightstand_2_drawers_en.json'),
     }
 };
 
