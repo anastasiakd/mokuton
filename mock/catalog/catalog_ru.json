@@ -18,13 +18,13 @@
     "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg"
   },
   {
-    "id": "3",
+    "id": "nightstand_2_drawers",
     "name": "Тумба с 2 ящиками",
     "price": {
       "amount": 6900,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/003.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_0.jpg"
   },
   {
     "id": "4",
