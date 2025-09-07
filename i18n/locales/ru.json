@@ -1,5 +1,5 @@
 {
-  "nav-catalog": "каталог",
+  "nav-catalog": "мебель",
   "nav-bespoke": "под заказ",
   "nav-reviews": "отзывы",
   "nav-about": "о нас",
@@ -12,6 +12,21 @@
   "basket_empty-title": "Ваша корзина сейчас пуста.",
   "basket_table-column_product": "Товар",
   "basket_table-column_price": "Стоимость",
+  "basket_table-column_count": "Количество",
   "basket_table-column_subtotal": "Итого",
-  "basket_table-button_delete": "Удалить товар из корзины"
+  "basket_table-button_delete": "Удалить товар из корзины",
+
+  "order_table-title": "Ваш заказ",
+  "order_customer-title": "Ваши данные",
+  "order_customer-lastName": "Фамилия",
+  "order_customer-firstName": "Имя",
+  "order_customer-patronymic": "Отчество",
+  "order_customer-email": "Email",
+  "order_customer-phone": "Номер телефона",
+  "order_customer-country": "Страна",
+  "order_customer-country-empty": "Нет подходящих данных",
+  "order_customer-city": "Город",
+  "order_customer-address": "Адрес",
+  "order_customer-comment": "Комментарий",
+  "order_button-submit": "Заказать"
 }

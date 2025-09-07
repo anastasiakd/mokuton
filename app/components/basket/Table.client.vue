@@ -13,15 +13,20 @@ const {
     isEmpty,
     totalPrice,
 } = storeToRefs(basketStore);
-const {
-    init: initBasket,
-    setProductCount,
-    removeProduct,
-} = basketStore;
 
-onMounted(initBasket);
+onMounted(async () => {
+    await basketStore.init();
 
-watch(pending, () => emit('loaded'));
+    if (!pending.value) {
+        emit('loaded');
+    }
+});
+
+watch(pending, newPending => {
+    if (!newPending) {
+        emit('loaded');
+    }
+});
 
 function goToCatalogProduct(basketProduct: BasketProduct) {
     navigateTo({
@@ -30,8 +35,8 @@ function goToCatalogProduct(basketProduct: BasketProduct) {
     });
 }
 
-function goToCatalog() {
-    navigateTo({name: 'catalog'});
+function goToOrder() {
+    navigateTo({name: 'basket-order'});
 }
 
 const columns: TableColumn<BasketProduct>[] = [
@@ -43,7 +48,7 @@ const columns: TableColumn<BasketProduct>[] = [
                 h('div', {
                     title: $t('basket_table-button_delete'),
                     class: 'grid bg-neutral-200 w-9 h-9 pb-1 place-content-center rounded-[50%] font-bold cursor-pointer',
-                    onClick: () => removeProduct(row.original),
+                    onClick: () => basketStore.removeProduct(row.original),
                 }, 'x'),
                 h('img', {
                     src: row.original.icon,
@@ -76,7 +81,7 @@ const columns: TableColumn<BasketProduct>[] = [
                     color: 'neutral',
                     variant: 'soft',
                     'onUpdate:modelValue': (newCount: number) => {
-                        setProductCount(row.original, newCount);
+                        basketStore.setProductCount(row.original, newCount);
                     },
                 }),
             ]);
@@ -112,7 +117,7 @@ const columns: TableColumn<BasketProduct>[] = [
                 block
                 square
                 class="w-auto cursor-pointer mt-1"
-                @click="goToCatalog"
+                @click="goToOrder"
             >
                 Оформить заказ
             </UButton>

@@ -25,7 +25,7 @@ export const useBasketStore = defineStore('basket', () => {
             }, 0);
 
         const totalCurrency = currencyUtils.getLocalizedCurrency(
-            useLocale().locale.value.code,
+            useUserLocale().locale.value,
         );
 
         return {
@@ -70,6 +70,10 @@ export const useBasketStore = defineStore('basket', () => {
     }
 
     async function init() {
+        if (products.value.length > 0) {
+            return;
+        }
+
         pending.value = true;
         products.value = [];
 
@@ -92,6 +96,11 @@ export const useBasketStore = defineStore('basket', () => {
         pending.value = false;
     }
 
+    function clear() {
+        products.value = [];
+        basketStorage.clear();
+    }
+
     return {
         pending,
         products,
@@ -103,5 +112,6 @@ export const useBasketStore = defineStore('basket', () => {
         removeProduct,
         setProductCount,
         init,
+        clear,
     };
 });

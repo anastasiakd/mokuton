@@ -1,10 +1,16 @@
 $font-size: 16px;
 
 $primary-color: #314158;
+
 $accent-color: rgba(229, 64, 64);
 $accent-bg: rgba(229, 64, 64, 0.3);
-$secondary-color: #AAAAAA;
+
+$secondary-color: var(--ui-color-neutral-300);
+$secondary-bg: var(--ui-color-neutral-50);
+
 $alt-color: #E2A329;
 $alt-bg: #E2A329D8;
+
 $warning-color: #E2A329;
+
 $error-color: #FD7373;

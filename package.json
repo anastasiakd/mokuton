@@ -17,9 +17,11 @@
     "@nuxtjs/i18n": "^10.0.3",
     "@pinia/nuxt": "^0.11.2",
     "@tailwindcss/vite": "^4.1.11",
+    "maska": "^3.2.0",
     "nuxt": "^4.0.1",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.11",
+    "valibot": "^1.1.0",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
@@ -27,6 +29,8 @@
     "@stylistic/eslint-plugin": "^5.2.2",
     "eslint": "^9.32.0",
     "eslint-plugin-vue": "^10.3.0",
+    "nodemailer": "^6.10.1",
+    "nuxt-nodemailer": "^1.1.2",
     "sass": "^1.89.2",
     "sass-loader": "^16.0.5"
   }

@@ -27,19 +27,16 @@ export default () => {
         }
     }
 
-    function updateStorage(basketProducts: Array<BasketProduct>) {
-        basketStorageItems.value = basketProducts.map(basketProduct => ({
-            id: basketProduct.id,
-            count: basketProduct.count,
-        }));
+    function clear() {
+        basketStorageItems.value = [];
     }
 
     return {
         basketStorageItems,
-        updateStorage,
 
         setProductCount,
         addProduct,
         removeProduct,
+        clear,
     };
 };

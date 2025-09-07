@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+@mixin collapsible-panel {
+    border: 1px solid var(--ui-color-neutral-300);
+    border-radius: 0.75rem;
+
+    &-title {
+        background-color: $secondary-bg;
+        border-radius: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    &-content {
+        background-color: $secondary-bg;
+        border-radius: 0.5em;
+    }
+}

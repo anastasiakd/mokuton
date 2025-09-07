@@ -13,6 +13,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         '@nuxt/ui',
         '@nuxtjs/i18n',
+        'nuxt-nodemailer',
     ],
 
     nitro: {
@@ -52,5 +53,15 @@ export default defineNuxtConfig({
             { code: 'en', name: 'English', file: 'en.json' },
             { code: 'ru', name: 'Русский', file: 'ru.json' }
         ],
+    },
+
+    nodemailer: {
+        host: process.env.NUXT_NODEMAILER_HOST,
+        port: 465,
+        secure: true,
+        auth: {
+            user: process.env.NUXT_NODEMAILER_AUTH_USER,
+            pass: process.env.NUXT_NODEMAILER_AUTH_PASS,
+        },
     },
 });

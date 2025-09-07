@@ -1,0 +1,1051 @@
+[
+  {
+    "country": "Австралия",
+    "code": "AU",
+    "value": "+61"
+  },
+  {
+    "country": "Австрия",
+    "code": "AT",
+    "value": "+43"
+  },
+  {
+    "country": "Азербайджан",
+    "code": "AZ",
+    "value": "+994"
+  },
+  {
+    "country": "Албания",
+    "code": "AL",
+    "value": "+355"
+  },
+  {
+    "country": "Алжир",
+    "code": "DZ",
+    "value": "+213"
+  },
+  {
+    "country": "Виргинские Острова (США)",
+    "code": "VI",
+    "value": "+1"
+  },
+  {
+    "country": "Американское Самоа",
+    "code": "AS",
+    "value": "+1"
+  },
+  {
+    "country": "Ангилья",
+    "code": "AI",
+    "value": "+1"
+  },
+  {
+    "country": "Ангола",
+    "code": "AO",
+    "value": "+244"
+  },
+  {
+    "country": "Андорра",
+    "code": "AD",
+    "value": "+376"
+  },
+  {
+    "country": "Антигуа и Барбуда",
+    "code": "AG",
+    "value": "+1"
+  },
+  {
+    "country": "Аргентина",
+    "code": "AR",
+    "value": "+54"
+  },
+  {
+    "country": "Армения",
+    "code": "AM",
+    "value": "+374"
+  },
+  {
+    "country": "Аруба",
+    "code": "AW",
+    "value": "+297"
+  },
+  {
+    "country": "Афганистан",
+    "code": "AF",
+    "value": "+93"
+  },
+  {
+    "country": "Багамские Острова",
+    "code": "BS",
+    "value": "+1"
+  },
+  {
+    "country": "Бангладеш",
+    "code": "BD",
+    "value": "+880"
+  },
+  {
+    "country": "Барбадос",
+    "code": "BB",
+    "value": "+1"
+  },
+  {
+    "country": "Бахрейн",
+    "code": "BH",
+    "value": "+973"
+  },
+  {
+    "country": "Белиз",
+    "code": "BZ",
+    "value": "+501"
+  },
+  {
+    "country": "Белоруссия",
+    "code": "BY",
+    "value": "+375"
+  },
+  {
+    "country": "Бельгия",
+    "code": "BE",
+    "value": "+32"
+  },
+  {
+    "country": "Бенин",
+    "code": "BJ",
+    "value": "+229"
+  },
+  {
+    "country": "Бермуды",
+    "code": "BM",
+    "value": "+1"
+  },
+  {
+    "country": "Болгария",
+    "code": "BG",
+    "value": "+359"
+  },
+  {
+    "country": "Боливия",
+    "code": "BO",
+    "value": "+591"
+  },
+  {
+    "country": "Бонэйр, Синт-Эстатиус и Саба",
+    "code": "BQ",
+    "value": "+599"
+  },
+  {
+    "country": "Босния и Герцеговина",
+    "code": "BA",
+    "value": "+387"
+  },
+  {
+    "country": "Ботсвана",
+    "code": "BW",
+    "value": "+267"
+  },
+  {
+    "country": "Бразилия",
+    "code": "BR",
+    "value": "+55"
+  },
+  {
+    "country": "Британская территория в Индийском океане",
+    "code": "IO",
+    "value": "+246"
+  },
+  {
+    "country": "Виргинские Острова (Великобритания)",
+    "code": "VG",
+    "value": "+1"
+  },
+  {
+    "country": "Бруней",
+    "code": "BN",
+    "value": "+673"
+  },
+  {
+    "country": "Буркина-Фасо",
+    "code": "BF",
+    "value": "+226"
+  },
+  {
+    "country": "Бурунди",
+    "code": "BI",
+    "value": "+257"
+  },
+  {
+    "country": "Бутан",
+    "code": "BT",
+    "value": "+975"
+  },
+  {
+    "country": "Вануату",
+    "code": "VU",
+    "value": "+678"
+  },
+  {
+    "country": "Ватикан",
+    "code": "VA",
+    "value": "+39"
+  },
+  {
+    "country": "Великобритания",
+    "code": "GB",
+    "value": "+44"
+  },
+  {
+    "country": "Венгрия",
+    "code": "HU",
+    "value": "+36"
+  },
+  {
+    "country": "Венесуэла",
+    "code": "VE",
+    "value": "+58"
+  },
+  {
+    "country": "Внешние малые острова (США)",
+    "code": "UM",
+    "value": "+1"
+  },
+  {
+    "country": "Восточный Тимор",
+    "code": "TL",
+    "value": "+670"
+  },
+  {
+    "country": "Вьетнам",
+    "code": "VN",
+    "value": "+84"
+  },
+  {
+    "country": "Габон",
+    "code": "GA",
+    "value": "+241"
+  },
+  {
+    "country": "Гаити",
+    "code": "HT",
+    "value": "+509"
+  },
+  {
+    "country": "Гайана",
+    "code": "GY",
+    "value": "+592"
+  },
+  {
+    "country": "Гамбия",
+    "code": "GM",
+    "value": "+220"
+  },
+  {
+    "country": "Гана",
+    "code": "GH",
+    "value": "+233"
+  },
+  {
+    "country": "Гваделупа",
+    "code": "GP",
+    "value": "+590"
+  },
+  {
+    "country": "Гватемала",
+    "code": "GT",
+    "value": "+502"
+  },
+  {
+    "country": "Гвиана",
+    "code": "GF",
+    "value": "+594"
+  },
+  {
+    "country": "Гвинея",
+    "code": "GN"
+  },
+  {
+    "country": "Гвинея-Бисау",
+    "code": "GW"
+  },
+  {
+    "country": "Германия",
+    "code": "DE",
+    "value": "+49"
+  },
+  {
+    "country": "Гернси",
+    "code": "GG"
+  },
+  {
+    "country": "Гибралтар",
+    "code": "GI"
+  },
+  {
+    "country": "Гондурас",
+    "code": "HN"
+  },
+  {
+    "country": "Гонконг",
+    "code": "HK",
+    "value": "+852"
+  },
+  {
+    "country": "Гренада",
+    "code": "GD"
+  },
+  {
+    "country": "Гренландия",
+    "code": "GL"
+  },
+  {
+    "country": "Греция",
+    "code": "GR"
+  },
+  {
+    "country": "Грузия",
+    "code": "GE",
+    "value": "+995"
+  },
+  {
+    "country": "Гуам",
+    "code": "GU"
+  },
+  {
+    "country": "Дания",
+    "code": "DK"
+  },
+  {
+    "country": "Джерси",
+    "code": "JE"
+  },
+  {
+    "country": "Джибути",
+    "code": "DJ"
+  },
+  {
+    "country": "Доминика",
+    "code": "DM"
+  },
+  {
+    "country": "Доминиканская Республика",
+    "code": "DO"
+  },
+  {
+    "country": "ДР Конго",
+    "code": "CD"
+  },
+  {
+    "country": "Нидерландские Антильские Острова",
+    "code": "AN"
+  },
+  {
+    "country": "Египет",
+    "code": "EG"
+  },
+  {
+    "country": "Замбия",
+    "code": "ZM"
+  },
+  {
+    "country": "САДР",
+    "code": "EH"
+  },
+  {
+    "country": "Зимбабве",
+    "code": "ZW"
+  },
+  {
+    "country": "Израиль",
+    "code": "IL"
+  },
+  {
+    "country": "Индия Индия",
+    "code": "IN"
+  },
+  {
+    "country": "Индонезия",
+    "code": "ID"
+  },
+  {
+    "country": "Иордания",
+    "code": "JO"
+  },
+  {
+    "country": "Ирак",
+    "code": "IQ"
+  },
+  {
+    "country": "Иран",
+    "code": "IR"
+  },
+  {
+    "country": "Ирландия",
+    "code": "IE"
+  },
+  {
+    "country": "Исландия",
+    "code": "IS"
+  },
+  {
+    "country": "Испания",
+    "code": "ES"
+  },
+  {
+    "country": "Италия",
+    "code": "IT"
+  },
+  {
+    "country": "Йемен",
+    "code": "YE"
+  },
+  {
+    "country": "Кабо-Верде",
+    "code": "CV"
+  },
+  {
+    "country": "Казахстан",
+    "code": "KZ"
+  },
+  {
+    "country": "Острова Кайман",
+    "code": "KY"
+  },
+  {
+    "country": "Камбоджа",
+    "code": "KH"
+  },
+  {
+    "country": "Камерун",
+    "code": "CM"
+  },
+  {
+    "country": "Канада",
+    "code": "CA"
+  },
+  {
+    "country": "Катар",
+    "code": "QA"
+  },
+  {
+    "country": "Кения",
+    "code": "KE"
+  },
+  {
+    "country": "Кипр",
+    "code": "CY"
+  },
+  {
+    "country": "Киргизия",
+    "code": "KG"
+  },
+  {
+    "country": "Кирибати",
+    "code": "KI"
+  },
+  {
+    "country": "Китайская Республика",
+    "code": "TW"
+  },
+  {
+    "country": "КНДР (Корейская Народно-Демократическая Республика)",
+    "code": "KP"
+  },
+  {
+    "country": "Китай (Китайская Народная Республика)",
+    "code": "CN"
+  },
+  {
+    "country": "Кокосовые острова",
+    "code": "CC"
+  },
+  {
+    "country": "Колумбия",
+    "code": "CO"
+  },
+  {
+    "country": "Коморы",
+    "code": "KM"
+  },
+  {
+    "country": "Коста-Рика",
+    "code": "CR"
+  },
+  {
+    "country": "Кот-д’Ивуар",
+    "code": "CI"
+  },
+  {
+    "country": "Куба",
+    "code": "CU"
+  },
+  {
+    "country": "Кувейт",
+    "code": "KW"
+  },
+  {
+    "country": "Кюрасао",
+    "code": "CW"
+  },
+  {
+    "country": "Лаос",
+    "code": "LA"
+  },
+  {
+    "country": "Латвия",
+    "code": "LV"
+  },
+  {
+    "country": "Лесото",
+    "code": "LS"
+  },
+  {
+    "country": "Либерия",
+    "code": "LR"
+  },
+  {
+    "country": "Ливан",
+    "code": "LB"
+  },
+  {
+    "country": "Ливия",
+    "code": "LY"
+  },
+  {
+    "country": "Литва",
+    "code": "LT"
+  },
+  {
+    "country": "Лихтенштейн",
+    "code": "LI"
+  },
+  {
+    "country": "Люксембург",
+    "code": "LU"
+  },
+  {
+    "country": "Маврикий",
+    "code": "MU"
+  },
+  {
+    "country": "Мавритания",
+    "code": "MR"
+  },
+  {
+    "country": "Мадагаскар",
+    "code": "MG"
+  },
+  {
+    "country": "Майотта",
+    "code": "YT"
+  },
+  {
+    "country": "Макао",
+    "code": "MO"
+  },
+  {
+    "country": "Северная Македония",
+    "code": "MK"
+  },
+  {
+    "country": "Малави",
+    "code": "MW"
+  },
+  {
+    "country": "Малайзия",
+    "code": "MY"
+  },
+  {
+    "country": "Мали",
+    "code": "ML"
+  },
+  {
+    "country": "Мальдивы",
+    "code": "MV"
+  },
+  {
+    "country": "Мальта",
+    "code": "MT"
+  },
+  {
+    "country": "Марокко",
+    "code": "MA"
+  },
+  {
+    "country": "Мартиника",
+    "code": "MQ"
+  },
+  {
+    "country": "Маршалловы Острова",
+    "code": "MH"
+  },
+  {
+    "country": "Мексика",
+    "code": "MX"
+  },
+  {
+    "country": "Микронезия",
+    "code": "FM"
+  },
+  {
+    "country": "Мозамбик",
+    "code": "MZ"
+  },
+  {
+    "country": "Молдавия",
+    "code": "MD"
+  },
+  {
+    "country": "Монако",
+    "code": "MC"
+  },
+  {
+    "country": "Монголия",
+    "code": "MN"
+  },
+  {
+    "country": "Монтсеррат",
+    "code": "MS"
+  },
+  {
+    "country": "Мьянма",
+    "code": "MM"
+  },
+  {
+    "country": "Намибия",
+    "code": "NA"
+  },
+  {
+    "country": "Науру",
+    "code": "NR"
+  },
+  {
+    "country": "Непал",
+    "code": "NP"
+  },
+  {
+    "country": "Нигер",
+    "code": "NE"
+  },
+  {
+    "country": "Нигерия",
+    "code": "NG"
+  },
+  {
+    "country": "Нидерланды",
+    "code": "NL"
+  },
+  {
+    "country": "Никарагуа",
+    "code": "NI"
+  },
+  {
+    "country": "Ниуэ",
+    "code": "NU"
+  },
+  {
+    "country": "Новая Зеландия",
+    "code": "NZ"
+  },
+  {
+    "country": "Новая Каледония",
+    "code": "NC"
+  },
+  {
+    "country": "Норвегия",
+    "code": "NO"
+  },
+  {
+    "country": "ОАЭ",
+    "code": "AE"
+  },
+  {
+    "country": "Оман",
+    "code": "OM"
+  },
+  {
+    "country": "Остров Буве",
+    "code": "BV"
+  },
+  {
+    "country": "Остров Мэн",
+    "code": "IM"
+  },
+  {
+    "country": "Острова Кука",
+    "code": "CK"
+  },
+  {
+    "country": "Остров Норфолк",
+    "code": "NF"
+  },
+  {
+    "country": "Остров Рождества",
+    "code": "CX"
+  },
+  {
+    "country": "Острова Питкэрн",
+    "code": "PN"
+  },
+  {
+    "country": "Острова Святой Елены, Вознесения и Тристан-да-Кунья",
+    "code": "SH"
+  },
+  {
+    "country": "Пакистан",
+    "code": "PK"
+  },
+  {
+    "country": "Палау",
+    "code": "PW"
+  },
+  {
+    "country": "Государство Палестина",
+    "code": "PS"
+  },
+  {
+    "country": "Панама",
+    "code": "PA"
+  },
+  {
+    "country": "Папуа — Новая Гвинея",
+    "code": "PG"
+  },
+  {
+    "country": "Парагвай",
+    "code": "PY"
+  },
+  {
+    "country": "Перу",
+    "code": "PE"
+  },
+  {
+    "country": "Польша",
+    "code": "PL"
+  },
+  {
+    "country": "Португалия",
+    "code": "PT"
+  },
+  {
+    "country": "Пуэрто-Рико",
+    "code": "PR"
+  },
+  {
+    "country": "Республика Конго",
+    "code": "CG"
+  },
+  {
+    "country": "Республика Корея",
+    "code": "KR"
+  },
+  {
+    "country": "Реюньон",
+    "code": "RE"
+  },
+  {
+    "country": "Россия",
+    "code": "RU",
+    "value": "+7"
+  },
+  {
+    "country": "Руанда",
+    "code": "RW"
+  },
+  {
+    "country": "Румыния",
+    "code": "RO"
+  },
+  {
+    "country": "Сальвадор",
+    "code": "SV"
+  },
+  {
+    "country": "Самоа",
+    "code": "WS"
+  },
+  {
+    "country": "Сан-Марино",
+    "code": "SM"
+  },
+  {
+    "country": "Сан-Томе и Принсипи",
+    "code": "ST"
+  },
+  {
+    "country": "Саудовская Аравия",
+    "code": "SA"
+  },
+  {
+    "country": "Эсватини",
+    "code": "SZ"
+  },
+  {
+    "country": "Северные Марианские Острова",
+    "code": "MP"
+  },
+  {
+    "country": "Сейшельские Острова",
+    "code": "SC"
+  },
+  {
+    "country": "Сен-Бартелеми",
+    "code": "BL"
+  },
+  {
+    "country": "Сен-Мартен",
+    "code": "MF"
+  },
+  {
+    "country": "Сен-Пьер и Микелон",
+    "code": "PM"
+  },
+  {
+    "country": "Сенегал",
+    "code": "SN"
+  },
+  {
+    "country": "Сент-Винсент и Гренадины",
+    "code": "VC"
+  },
+  {
+    "country": "Сент-Китс и Невис",
+    "code": "KN"
+  },
+  {
+    "country": "Сент-Люсия",
+    "code": "LC"
+  },
+  {
+    "country": "Сербия",
+    "code": "RS"
+  },
+  {
+    "country": "Сингапур",
+    "code": "SG"
+  },
+  {
+    "country": "Синт-Мартен",
+    "code": "SX"
+  },
+  {
+    "country": "Сирия",
+    "code": "SY"
+  },
+  {
+    "country": "Словакия",
+    "code": "SK"
+  },
+  {
+    "country": "Словения",
+    "code": "SI"
+  },
+  {
+    "country": "Соломоновы Острова",
+    "code": "SB"
+  },
+  {
+    "country": "Сомали",
+    "code": "SO"
+  },
+  {
+    "country": "Судан",
+    "code": "SD"
+  },
+  {
+    "country": "Суринам",
+    "code": "SR"
+  },
+  {
+    "country": "США",
+    "code": "US"
+  },
+  {
+    "country": "Сьерра-Леоне",
+    "code": "SL"
+  },
+  {
+    "country": "Таджикистан",
+    "code": "TJ"
+  },
+  {
+    "country": "Таиланд",
+    "code": "TH"
+  },
+  {
+    "country": "Танзания",
+    "code": "TZ"
+  },
+  {
+    "country": "Теркс и Кайкос",
+    "code": "TC"
+  },
+  {
+    "country": "Того",
+    "code": "TG"
+  },
+  {
+    "country": "Токелау",
+    "code": "TK"
+  },
+  {
+    "country": "Тонга",
+    "code": "TO"
+  },
+  {
+    "country": "Тринидад и Тобаго",
+    "code": "TT"
+  },
+  {
+    "country": "Тувалу",
+    "code": "TV"
+  },
+  {
+    "country": "Тунис",
+    "code": "TN"
+  },
+  {
+    "country": "Туркмения",
+    "code": "TM"
+  },
+  {
+    "country": "Турция",
+    "code": "TR"
+  },
+  {
+    "country": "Уганда",
+    "code": "UG"
+  },
+  {
+    "country": "Узбекистан",
+    "code": "UZ"
+  },
+  {
+    "country": "Украина",
+    "code": "UA"
+  },
+  {
+    "country": "Уоллис и Футуна",
+    "code": "WF"
+  },
+  {
+    "country": "Уругвай",
+    "code": "UY"
+  },
+  {
+    "country": "Фареры",
+    "code": "FO"
+  },
+  {
+    "country": "Фиджи",
+    "code": "FJ"
+  },
+  {
+    "country": "Филиппины",
+    "code": "PH"
+  },
+  {
+    "country": "Финляндия",
+    "code": "FI"
+  },
+  {
+    "country": "Фолклендские острова",
+    "code": "FK"
+  },
+  {
+    "country": "Франция",
+    "code": "FR"
+  },
+  {
+    "country": "Французская Полинезия",
+    "code": "PF"
+  },
+  {
+    "country": "Французские Южные и Антарктические Территории",
+    "code": "TF"
+  },
+  {
+    "country": "Херд и Макдональд",
+    "code": "HM"
+  },
+  {
+    "country": "Хорватия",
+    "code": "HR"
+  },
+  {
+    "country": "ЦАР",
+    "code": "CF"
+  },
+  {
+    "country": "Чад",
+    "code": "TD"
+  },
+  {
+    "country": "Черногория",
+    "code": "ME"
+  },
+  {
+    "country": "Чехия",
+    "code": "CZ"
+  },
+  {
+    "country": "Чили",
+    "code": "CL"
+  },
+  {
+    "country": "Швейцария",
+    "code": "CH"
+  },
+  {
+    "country": "Швеция",
+    "code": "SE"
+  },
+  {
+    "country": "Флаг Шпицбергена и Ян-Майена Шпицберген и Ян-Майен",
+    "code": "SJ"
+  },
+  {
+    "country": "Шри-Ланка",
+    "code": "LK"
+  },
+  {
+    "country": "Эквадор",
+    "code": "EC"
+  },
+  {
+    "country": "Экваториальная Гвинея",
+    "code": "GQ"
+  },
+  {
+    "country": "Эритрея",
+    "code": "ER"
+  },
+  {
+    "country": "Эстония",
+    "code": "EE"
+  },
+  {
+    "country": "Эфиопия",
+    "code": "ET"
+  },
+  {
+    "country": "ЮАР",
+    "code": "ZA"
+  },
+  {
+    "country": "Южная Георгия и Южные Сандвичевы Острова",
+    "code": "GS"
+  },
+  {
+    "country": "Южный Судан",
+    "code": "SS"
+  },
+  {
+    "country": "Ямайка",
+    "code": "JM"
+  },
+  {
+    "country": "Япония",
+    "code": "JP",
+    "value": "+81"
+  }
+]

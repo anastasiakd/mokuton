@@ -1,5 +1,5 @@
 {
-  "nav-catalog": "catalog",
+  "nav-catalog": "furniture",
   "nav-bespoke": "bespoke",
   "nav-reviews": "reviews",
   "nav-about": "about",
@@ -12,6 +12,21 @@
   "basket_empty-title": "Your cart is currently empty.",
   "basket_table-column_product": "Product",
   "basket_table-column_price": "Price",
+  "basket_table-column_count": "Count",
   "basket_table-column_subtotal": "Subtotal",
-  "basket_table-button_delete": "Remove product from cart"
+  "basket_table-button_delete": "Remove product from cart",
+
+  "order_table-title": "Your order",
+  "order_customer-title": "Your personal data",
+  "order_customer-lastName": "Last name",
+  "order_customer-firstName": "First name",
+  "order_customer-patronymic": "Patronymic",
+  "order_customer-email": "Email",
+  "order_customer-phone": "Phone",
+  "order_customer-country": "Country",
+  "order_customer-country-empty": "No matching data",
+  "order_customer-city": "City",
+  "order_customer-address": "Address",
+  "order_customer-comment": "Comment",
+  "order_button-submit": "Order"
 }
