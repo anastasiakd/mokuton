@@ -1,31 +1,66 @@
 import {defineStore} from 'pinia';
 
 export const useCatalogStore = defineStore('catalog', () => {
-    const items = ref<CatalogProduct[]>([]);
-    const isEmpty = computed(() => items.value.length === 0);
+    const products = ref<CatalogProduct[]>([]);
+    const categories = ref<CatalogCategory[]>([]);
 
-    async function getList() {
-        const {data} = await useAsyncData<CatalogProduct[]>(
-            'catalog-list',
-            () => $fetch(useRequestQuery('/api/catalog')),
+    async function getCategories() {
+        const {data} = await useAsyncData<CatalogCategory[]>(
+            'catalog-categories-list',
+            () => $fetch(useRequestQuery('/api/catalog/category/list')),
         );
         if (data.value) {
-            items.value = data.value;
+            categories.value = data.value;
+        }
+    }
+
+    async function getProducts() {
+        const {data} = await useAsyncData<CatalogProduct[]>(
+            'catalog-products-list',
+            () => $fetch(useRequestQuery('/api/catalog/product/list')),
+        );
+        if (data.value) {
+            products.value = data.value;
         }
     }
 
     async function getProduct(id: string) {
         const {data} = await useAsyncData<ProductDetail>(
             `catalog-product-${id}`,
-            () => $fetch(useRequestQuery(`/api/product/${id}`)),
+            () => $fetch(useRequestQuery(`/api/catalog/product/${id}`)),
         );
         return data.value;
     }
 
+    async function initCatalog() {
+        await Promise.all([
+            getCategories(),
+            getProducts(),
+        ]);
+    }
+
+    const filterCategory = ref<CatalogCategory>();
+    async function setFilter(value: CatalogCategory) {
+        filterCategory.value = value;
+    }
+
+    const filterProducts = computed(() => {
+        if (!filterCategory) {
+            return products.value;
+        }
+        return products.value.filter(product => (
+            !filterCategory.value || product.category === filterCategory.value?.id
+        ));
+    });
+
     return {
-        items,
-        isEmpty,
-        getList,
+        categories,
+        products,
         getProduct,
+        initCatalog,
+
+        filterCategory,
+        filterProducts,
+        setFilter,
     };
 });

@@ -21,7 +21,7 @@ async function submitOrder(customer) {
 </script>
 
 <template>
-    <div class="order-container">
+    <div class="order-container pt-8">
         <BaseSpinner v-if="pending"/>
 
         <OrderTable

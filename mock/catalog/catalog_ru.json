@@ -6,7 +6,8 @@
       "amount": 25000,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
+    "category": "bookcase"
   },
   {
     "id": "table",
@@ -15,7 +16,8 @@
       "amount": 15000,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
+    "category": "table"
   },
   {
     "id": "nightstand_2_drawers",
@@ -24,16 +26,18 @@
       "amount": 6900,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_0.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_0.jpg",
+    "category": "bookcase"
   },
   {
-    "id": "4",
-    "name": "Шкафик для ванной комнаты",
+    "id": "picklers_triangle",
+    "name": "Треугольник Пиклера",
     "price": {
-      "amount": 15000,
+      "amount": 14500,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/004.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/picklers_triangle.jpg",
+    "category": "toy"
   },
   {
     "id": "5",
@@ -42,6 +46,7 @@
       "amount": 15000,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/005.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/005.jpg",
+    "category": "bookcase"
   }
 ]

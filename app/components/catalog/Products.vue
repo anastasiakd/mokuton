@@ -1,16 +1,14 @@
 <script setup lang="ts">
-defineProps({
-    products: {
-        type: Array<CatalogProduct>,
-        required: true,
-    }
-});
+const catalogStore = useCatalogStore();
+const {
+    filterProducts: products,
+} = storeToRefs(catalogStore);
 </script>
 
 <template>
-    <div class="products-catalog">
+    <div class="products-catalog pt-8">
         <ul class="products columns-3">
-            <CatalogItem
+            <CatalogProductItem
                 v-for="product in products"
                 :key="product.id"
                 :product="product"

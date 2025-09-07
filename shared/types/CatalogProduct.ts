@@ -5,4 +5,5 @@ export type CatalogProduct = {
     name: string;
     price: Price;
     icon: string,
+    category: string,
 };

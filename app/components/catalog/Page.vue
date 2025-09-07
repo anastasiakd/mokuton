@@ -1,22 +1,15 @@
 <script setup lang="ts">
 const catalogStore = useCatalogStore();
-const {
-    items: products,
-    isEmpty,
-} = storeToRefs(catalogStore);
-const {
-    getList,
-} = catalogStore;
+const {initCatalog} = catalogStore;
 
-getList();
+initCatalog();
 </script>
 
 <template>
+    <CatalogFilter/>
+
     <div class="products-container">
-        <Catalog
-            v-if="!isEmpty"
-            :products="products"
-        />
+        <CatalogProducts/>
     </div>
 </template>
 

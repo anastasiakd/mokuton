@@ -1,5 +1,4 @@
-import type {ProductDetail} from '#shared/types/ProductDetail';
-import response from '../../../mock/product';
+import response from '../../../../mock/product';
 
 export default defineEventHandler(async (event): Promise<ProductDetail> => {
     const locale = getQuery(event).lang as string;

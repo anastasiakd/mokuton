@@ -14,7 +14,7 @@ const {product} = defineProps({
 <template>
     <div
         v-if="product"
-        class="product__container"
+        class="product__container pt-8"
     >
         <div class="product__header">
             <h1>
