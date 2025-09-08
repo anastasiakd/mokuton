@@ -1,23 +1,13 @@
 [
   {
-    "id": "honeycombs_bookcase",
-    "name": "Шкаф \"Пчелиные соты\"",
+    "id": "armchair_bw",
+    "name": "Кресло Black&White",
     "price": {
-      "amount": 25000,
+      "amount": 9000,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/honeycombs_bookcase_0.jpg",
-    "category": "bookcase"
-  },
-  {
-    "id": "table",
-    "name": "Письменный стол MokuTable.1",
-    "price": {
-      "amount": 15000,
-      "currency": "RUB"
-    },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/table_0.jpg",
-    "category": "table"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_0.jpg",
+    "category": ["armchair"]
   },
   {
     "id": "nightstand_2_drawers",
@@ -27,7 +17,27 @@
       "currency": "RUB"
     },
     "icon": "http://localhost:3000/_nuxt/assets/images/external/products/nightstand_2_drawers_0.jpg",
-    "category": "bookcase"
+    "category": ["bookcase"]
+  },
+  {
+    "id": "table",
+    "name": "Письменный стол MokuTable",
+    "price": {
+      "amount": 15000,
+      "currency": "RUB"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/table_0.jpg",
+    "category": ["table"]
+  },
+  {
+    "id": "kitchen_child",
+    "name": "Детская кухня",
+    "price": {
+      "amount": 18000,
+      "currency": "RUB"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/kitchen_child_0.jpg",
+    "category": ["for_child"]
   },
   {
     "id": "picklers_triangle",
@@ -36,17 +46,17 @@
       "amount": 14500,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle.jpg",
-    "category": "sport"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle_0.jpg",
+    "category": ["for_child"]
   },
   {
-    "id": "5",
-    "name": "Шкафик для ванной комнаты",
+    "id": "bathroom_cabinet",
+    "name": "Шкафчик для ванной комнаты",
     "price": {
       "amount": 15000,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/005.jpg",
-    "category": "bookcase"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_0.jpg",
+    "category": ["bookcase"]
   }
 ]

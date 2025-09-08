@@ -1,26 +1,26 @@
 <script setup lang="ts">
 import CatalogItem from './CatalogItem.vue';
 
-const catalogStore = useCatalogStore();
+const modelStore = useModelStore();
 const {
-    filterProducts: products,
-} = storeToRefs(catalogStore);
+    filterModels: models,
+} = storeToRefs(modelStore);
 </script>
 
 <template>
-    <div class="products-catalog pt-8">
-        <ul class="products columns-3">
+    <div class="models-catalog pt-8">
+        <ul class="models columns-3">
             <CatalogItem
-                v-for="product in products"
-                :key="product.id"
-                :product="product"
+                v-for="model in models"
+                :key="model.id"
+                :model="model"
             />
         </ul>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.products {
+.models {
     grid-template-columns: repeat(auto-fill, minmax(29%, 1fr));
 
     &-catalog {
@@ -29,7 +29,7 @@ const {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, minmax(min-content, max-content));
 
-        ul.products {
+        ul.models {
             grid-column: 1 / span 3;
             display: grid;
             grid-auto-rows: auto;

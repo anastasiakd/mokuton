@@ -1,0 +1,15 @@
+{
+  "id": "armchair_bw",
+  "name": "Кресло Black&White",
+  "price": {
+    "amount": 9000,
+    "currency": "RUB"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_0.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_1.jpg"
+  ],
+  "description": "Кресло Black&White идеально впишется в современный интерьер, даря комфорт и чувство стиля. Универсальная модель для обустройства уютного уголка в гостиной, кафе или на даче.",
+  "suits": []
+}

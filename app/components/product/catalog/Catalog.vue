@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import CatalogItem from './CatalogItem.vue';
 
-const catalogStore = useCatalogStore();
+const productStore = useProductStore();
 const {
     filterProducts: products,
-} = storeToRefs(catalogStore);
+} = storeToRefs(productStore);
 </script>
 
 <template>
-    <div class="products-catalog pt-8">
+    <div class="products-catalog pt-8 pb-8">
         <ul class="products columns-3">
             <CatalogItem
                 v-for="product in products"

@@ -2,8 +2,8 @@
 import Filter from './Filter.vue';
 import Catalog from './Catalog.vue';
 
-const catalogStore = useCatalogStore();
-const {initCatalog} = catalogStore;
+const productStore = useProductStore();
+const {initCatalog} = productStore;
 
 initCatalog();
 </script>

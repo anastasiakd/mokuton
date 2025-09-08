@@ -1,14 +1,18 @@
 [
   {
-    "id": "bookcase",
-    "name": "Шкафы"
+    "id": "for_child",
+    "name": "Для детей"
+  },
+  {
+    "id": "armchair",
+    "name": "Кресло"
   },
   {
     "id": "table",
-    "name": "Столы"
+    "name": "Стол"
   },
   {
-    "id": "sport",
-    "name": "Спортивный инвентарь"
+    "id": "bookcase",
+    "name": "Шкаф"
   }
 ]

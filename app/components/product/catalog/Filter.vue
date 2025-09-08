@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const catalogStore = useCatalogStore();
+const productStore = useProductStore();
 const {
     categories,
     filterCategory,
-} = storeToRefs(catalogStore);
+} = storeToRefs(productStore);
 
 function onChooseCategory(category: CatalogCategory | undefined) {
-    catalogStore.setFilter(category);
+    productStore.setFilter(category);
 }
 </script>
 

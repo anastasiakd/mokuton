@@ -1,14 +1,18 @@
 [
   {
+    "id": "armchair",
+    "name": "Armchair"
+  },
+  {
     "id": "bookcase",
     "name": "Bookcase"
   },
   {
-    "id": "table",
-    "name": "Table"
+    "id": "for_child",
+    "name": "For children"
   },
   {
-    "id": "sport",
-    "name": "Sports equipment"
+    "id": "table",
+    "name": "Table"
   }
 ]

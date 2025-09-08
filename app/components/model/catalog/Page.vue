@@ -2,8 +2,8 @@
 import Filter from './Filter.vue';
 import Catalog from './Catalog.vue';
 
-const catalogStore = useCatalogStore();
-const {initCatalog} = catalogStore;
+const modelStore = useModelStore();
+const {initCatalog} = modelStore;
 
 initCatalog();
 </script>
@@ -11,13 +11,13 @@ initCatalog();
 <template>
     <Filter/>
 
-    <div class="products-container">
+    <div class="models-container">
         <Catalog/>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.products {
+.models {
     &-container {
         grid-column: 2;
     }

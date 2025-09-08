@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const {product} = defineProps({
-    product: {
+const {model} = defineProps({
+    model: {
         type: Object as PropType<ProductDetail>,
         required: true,
     },
@@ -12,7 +12,7 @@ const {
 } = basketStore;
 
 function onBuy() {
-    addToBasket(product);
+    addToBasket(model);
     navigateTo({name: 'basket'});
 }
 </script>

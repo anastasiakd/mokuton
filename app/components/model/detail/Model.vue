@@ -4,8 +4,8 @@ import ModelBuy from './ModelBuy.client.vue';
 
 const {formatPrice} = numberUtils;
 
-const {product} = defineProps({
-    product: {
+const {model} = defineProps({
+    model: {
         type: Object as PropType<ProductDetail>,
         required: true,
     },
@@ -14,22 +14,22 @@ const {product} = defineProps({
 
 <template>
     <div
-        v-if="product"
-        class="product__container pt-8"
+        v-if="model"
+        class="model__container pt-8"
     >
-        <div class="product__header">
+        <div class="model__header">
             <h1>
-                {{ product.name }}
+                {{ model.name }}
             </h1>
 
             <hr>
         </div>
 
         <div class="pt-8 pb-8">
-            <div class="product__gallery">
+            <div class="model__gallery">
                 <UCarousel
                     v-slot="{ item }"
-                    :items="product.images"
+                    :items="model.images"
                     dots
                     :ui="{item: 'basis-auto'}"
                     class="w-full mx-auto"
@@ -42,20 +42,20 @@ const {product} = defineProps({
             </div>
         </div>
 
-        <div class="product__content pt-8 pb-8">
-            <div class="product__description">
+        <div class="model__content pt-8 pb-8">
+            <div class="model__description">
                 <p>
-                    {{ product.description }}
+                    {{ model.description }}
                 </p>
 
-                <template v-if="product.suits?.length">
+                <template v-if="model.suits?.length">
                     <p>
                         {{ $t('catalog_product-suits') }}
                     </p>
 
                     <ul>
                         <li
-                            v-for="(suitItem, index) in product.suits"
+                            v-for="(suitItem, index) in model.suits"
                             :key="index"
                         >
                             {{ suitItem }}
@@ -64,19 +64,19 @@ const {product} = defineProps({
                 </template>
             </div>
 
-            <div class="product__purchase">
+            <div class="model__purchase">
                 <h1>
-                    {{ formatPrice(product.price) }}
+                    {{ formatPrice(model.price) }}
                 </h1>
 
-                <ModelBuy :product="product"/>
+                <ModelBuy :model="model"/>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.product {
+.model {
     &__container {
         grid-column: 2;
     }

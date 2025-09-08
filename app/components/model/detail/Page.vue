@@ -8,23 +8,23 @@ const {id} = defineProps({
     },
 });
 
-const catalogStore = useCatalogStore();
+const modelStore = useModelStore();
 const {
-    getProduct,
-} = catalogStore;
+    getModel,
+} = modelStore;
 
-const product = ref();
+const model = ref();
 
-getProduct(id)
+getModel(id)
     .then(result => {
-        product.value = result;
+        model.value = result;
     });
 </script>
 
 <template>
     <Model
-        v-if="product"
-        :product="product"
+        v-if="model"
+        :model="model"
     />
 </template>
 

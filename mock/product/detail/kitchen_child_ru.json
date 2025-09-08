@@ -1,0 +1,22 @@
+{
+  "id": "kitchen_child",
+  "name": "Детская кухня",
+  "price": {
+    "amount": 18000,
+    "currency": "RUB"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/products/kitchen_child_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/products/kitchen_child_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/kitchen_child_2.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/kitchen_child_3.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/kitchen_child_4.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/kitchen_child_5.jpg"
+  ],
+  "description": "Кухня для маленькой хозяйки! \n\nВ этой кухне есть всё необходимое: холодильник, плита, духовка и раковина. Ваш юный шеф-повар сможет приготовить различные блюда и удивить всю семью новыми авторскими рецептами.",
+  "suits": [
+    "высота - 115 см",
+    "длина - 100 см",
+    "глубина - 36 см"
+  ]
+}

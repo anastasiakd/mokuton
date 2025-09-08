@@ -8,10 +8,10 @@ const {id} = defineProps({
     },
 });
 
-const catalogStore = useCatalogStore();
+const productStore = useProductStore();
 const {
     getProduct,
-} = catalogStore;
+} = productStore;
 
 const product = ref();
 
