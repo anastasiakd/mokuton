@@ -3,50 +3,50 @@
     "id": "honeycombs_bookcase",
     "name": "Шкаф \"Пчелиные соты\"",
     "price": {
-      "amount": 25000,
+      "amount": 5000,
       "currency": "RUB"
     },
     "icon": "http://localhost:3000/_nuxt/assets/images/external/models/honeycombs_bookcase_0.jpg",
-    "category": "bookcase"
+    "category": ["bookcase"]
   },
   {
     "id": "table",
     "name": "Письменный стол MokuTable.1",
     "price": {
-      "amount": 15000,
+      "amount": 3000,
       "currency": "RUB"
     },
     "icon": "http://localhost:3000/_nuxt/assets/images/external/models/table_0.jpg",
-    "category": "table"
-  },
-  {
-    "id": "nightstand_2_drawers",
-    "name": "Тумба с 2 ящиками",
-    "price": {
-      "amount": 6900,
-      "currency": "RUB"
-    },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_0.jpg",
-    "category": "bookcase"
+    "category": ["table"]
   },
   {
     "id": "picklers_triangle",
     "name": "Треугольник Пиклера",
     "price": {
-      "amount": 14500,
+      "amount": 5000,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/picklers_triangle.jpg",
-    "category": "toy"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/picklers_triangle_0.jpg",
+    "category": ["for_child"]
   },
   {
-    "id": "5",
-    "name": "Шкафик для ванной комнаты",
+    "id": "tree",
+    "name": "Винтовая ёлка",
     "price": {
-      "amount": 15000,
+      "amount": 3000,
       "currency": "RUB"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/005.jpg",
-    "category": "bookcase"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/tree_0.jpg",
+    "category": ["for_child"]
+  },
+  {
+    "id": "kitchen_children",
+    "name": "Детская кухня",
+    "price": {
+      "amount": 8000,
+      "currency": "RUB"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/kitchen_children_0.jpg",
+    "category": ["for_child"]
   }
 ]

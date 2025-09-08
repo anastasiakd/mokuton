@@ -53,6 +53,21 @@ export const useModelStore = defineStore('model-catalog', () => {
         ));
     });
 
+    const sendEmail = useSendEmail();
+    function submitOrder({customer, model}) {
+        sendEmail.send({
+            to: 'mokuton-wd@yandex.ru',
+            subject: 'Mokuton Wood Design: покупка модели',
+            data: JSON.stringify({customer, model}),
+        });
+
+        sendEmail.send({
+            to: customer.email,
+            subject: `Mokuton Wood Design: покупка модели "${model.name}"`,
+            data: 'Спасибо за заказ! Скоро с вами свяжется наш менеджер.',
+        });
+    }
+
     return {
         categories,
         models,
@@ -62,5 +77,6 @@ export const useModelStore = defineStore('model-catalog', () => {
         filterCategory,
         filterModels,
         setFilter,
+        submitOrder,
     };
 });

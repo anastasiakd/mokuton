@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {numberUtils} from '#shared/utils';
-import ModelBuy from './ModelBuy.client.vue';
+import ModelBuy from './ModelBuy.vue';
+import Customer from './Customer.vue';
 
 const {formatPrice} = numberUtils;
 
@@ -10,6 +11,30 @@ const {model} = defineProps({
         required: true,
     },
 });
+
+const showCustomer = ref(false);
+
+function showCustomerForm() {
+    showCustomer.value = true;
+}
+
+const toast = useToast();
+
+function onBuy(customer) {
+    toast.add({
+        title: 'Ваш заказ принят',
+        description: `Скоро с вами свяжется наш менеджер. Подтверждение заказа отправлено на ${customer.email}.`,
+        color: 'success',
+        progress: false,
+    });
+
+    useModelStore().submitOrder({
+        customer,
+        model,
+    });
+
+    showCustomer.value = false;
+}
 </script>
 
 <template>
@@ -69,9 +94,20 @@ const {model} = defineProps({
                     {{ formatPrice(model.price) }}
                 </h1>
 
-                <ModelBuy :model="model"/>
+                <ModelBuy
+                    v-if="!showCustomer"
+                    :model="model"
+                    @buy="showCustomerForm"
+                />
             </div>
         </div>
+
+        <transition name="fade">
+            <Customer
+                v-show="showCustomer"
+                @order:submit="onBuy"
+            />
+        </transition>
     </div>
 </template>
 

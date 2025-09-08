@@ -11,7 +11,10 @@ function onChooseCategory(category: CatalogCategory | undefined) {
 </script>
 
 <template>
-    <div class="catalog-filter pb-4 pt-4">
+    <div
+        v-if="categories.length"
+        class="catalog-filter pb-4 pt-4"
+    >
         <ul class="flex flex-wrap gap-4 items-center justify-center width-auto text-center">
             <li
                 class="cursor-pointer"

@@ -1,9 +1,8 @@
 import {defineStore} from 'pinia';
 
-const sendEmail = useSendEmail();
-
 export const useOrderStore = defineStore('order', () => {
     const basketStore = useBasketStore();
+    const sendEmail = useSendEmail();
 
     function submitOrder({customer}) {
         sendEmail.send({

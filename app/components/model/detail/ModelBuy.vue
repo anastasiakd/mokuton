@@ -1,19 +1,10 @@
 <script setup lang="ts">
-const {model} = defineProps({
-    model: {
-        type: Object as PropType<ProductDetail>,
-        required: true,
-    },
-});
-
-const basketStore = useBasketStore();
-const {
-    addProduct: addToBasket,
-} = basketStore;
+const emit = defineEmits([
+    'buy',
+]);
 
 function onBuy() {
-    addToBasket(model);
-    navigateTo({name: 'basket'});
+    emit('buy');
 }
 </script>
 
