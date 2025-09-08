@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CatalogItem from './CatalogItem.vue';
+
 const catalogStore = useCatalogStore();
 const {
     filterProducts: products,
@@ -8,7 +10,7 @@ const {
 <template>
     <div class="products-catalog pt-8">
         <ul class="products columns-3">
-            <CatalogProductItem
+            <CatalogItem
                 v-for="product in products"
                 :key="product.id"
                 :product="product"

@@ -1,0 +1,19 @@
+{
+  "id": "table",
+  "name": "Desk MokuTable.1",
+  "price": {
+    "amount": 200,
+    "currency": "USD"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/table_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/table_2.jpg"
+  ],
+  "description": "MokuTable.1 — is a mysterious and proud piece of furniture – it’s not so easy to win it over! We hope it cares about the comfort of our customer and will bring a bit of aesthetics to the interior. Our clients prefer to see only beauty and prosperity in everyday life.",
+  "suits": [
+    "width 135 cm / depth 70 cm / height 75 cm",
+    "4 drawers"
+  ]
+}

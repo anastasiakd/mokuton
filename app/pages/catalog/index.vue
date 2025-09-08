@@ -1,3 +1,0 @@
-<template>
-    <CatalogPage/>
-</template>

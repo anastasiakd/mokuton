@@ -1,5 +1,6 @@
 {
-  "nav-catalog": "furniture",
+  "nav-product": "furniture",
+  "nav-model": "cad-models",
   "nav-bespoke": "bespoke",
   "nav-reviews": "reviews",
   "nav-about": "about",

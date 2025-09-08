@@ -1,13 +1,13 @@
 <script setup lang="ts">
 definePageMeta({
     middleware: () => {
-        return navigateTo('/catalog');
+        return navigateTo('/product/catalog');
     }
 });
 </script>
 
 <template>
-    <CatalogPage/>
+    <ProductCatalogPage/>
 </template>
 
 <style scoped>

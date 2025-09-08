@@ -1,4 +1,4 @@
-import response from '../../../../mock/catalog';
+import response from '~~/mock/product/catalog';
 
 export default defineEventHandler(async (event): Promise<CatalogProduct[]> => {
     const locale = getQuery(event).lang as string;

@@ -3,9 +3,14 @@ const route = useRoute();
 
 const items = computed(() => [
     {
-        label: $t('nav-catalog'),
-        to: '/catalog',
-        active: route.path.startsWith('/catalog'),
+        label: $t('nav-product'),
+        to: '/product/catalog',
+        active: route.path.startsWith('/product'),
+    },
+    {
+        label: $t('nav-model'),
+        to: '/model/catalog',
+        active: route.path.startsWith('/model'),
     },
     {
         label: $t('nav-bespoke'),

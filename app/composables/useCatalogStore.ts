@@ -1,13 +1,13 @@
 import {defineStore} from 'pinia';
 
-export const useCatalogStore = defineStore('catalog', () => {
+export const useCatalogStore = defineStore('product-catalog', () => {
     const products = ref<CatalogProduct[]>([]);
     const categories = ref<CatalogCategory[]>([]);
 
     async function getCategories() {
         const {data} = await useAsyncData<CatalogCategory[]>(
-            'catalog-categories-list',
-            () => $fetch(useRequestQuery('/api/catalog/category/list')),
+            'product-categories-list',
+            () => $fetch(useRequestQuery('/api/product/category/list')),
         );
         if (data.value) {
             categories.value = data.value;
@@ -16,8 +16,8 @@ export const useCatalogStore = defineStore('catalog', () => {
 
     async function getProducts() {
         const {data} = await useAsyncData<CatalogProduct[]>(
-            'catalog-products-list',
-            () => $fetch(useRequestQuery('/api/catalog/product/list')),
+            'products-list',
+            () => $fetch(useRequestQuery('/api/product/list')),
         );
         if (data.value) {
             products.value = data.value;
@@ -26,8 +26,8 @@ export const useCatalogStore = defineStore('catalog', () => {
 
     async function getProduct(id: string) {
         const {data} = await useAsyncData<ProductDetail>(
-            `catalog-product-${id}`,
-            () => $fetch(useRequestQuery(`/api/catalog/product/${id}`)),
+            `product-${id}`,
+            () => $fetch(useRequestQuery(`/api/product/${id}`)),
         );
         return data.value;
     }

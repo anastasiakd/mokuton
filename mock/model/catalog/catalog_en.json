@@ -1,0 +1,51 @@
+[
+  {
+    "id": "honeycombs_bookcase",
+    "name": "Bookcase \"Honeycomb\"",
+    "price": {
+      "amount": 350,
+      "currency": "USD"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
+    "category": "bookcase"
+  },
+  {
+    "id": "table",
+    "name": "Desk MokuTable.1",
+    "price": {
+      "amount": 200,
+      "currency": "USD"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
+    "category": "table"
+  },
+  {
+    "id": "nightstand_2_drawers",
+    "name": "Nightstand with 2 drawers",
+    "price": {
+      "amount": 90,
+      "currency": "USD"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_0.jpg",
+    "category": "bookcase"
+  },
+  {
+    "id": "picklers_triangle",
+    "name": "Pickler`s triangle",
+    "price": {
+      "amount": 330,
+      "currency": "USD"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/picklers_triangle.jpg",
+    "category": "toys"
+  },
+  {
+    "id": "5",
+    "name": "Шкафик для ванной комнаты",
+    "price": {
+      "amount": 15000,
+      "currency": "USD"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/005.jpg"
+  }
+]

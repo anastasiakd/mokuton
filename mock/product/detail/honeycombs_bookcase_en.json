@@ -1,0 +1,16 @@
+{
+  "id": "honeycombs_bookcase",
+  "name": "Bookcase \"Honeycomb\"",
+  "price": {
+    "amount": 350,
+    "currency": "USD"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_2.jpg"
+  ],
+  "description": "The bookcase \"Honeycomb\" will become a unique and inimitable decoration item for your apartment. It has an expressive appearance and an unusual shape. This piece of furniture can be used as a bookshelf, a chest of drawers or simply a storage unit.",
+  "suits": []
+}

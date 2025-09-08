@@ -1,0 +1,3 @@
+<template>
+    <ProductCatalogPage/>
+</template>

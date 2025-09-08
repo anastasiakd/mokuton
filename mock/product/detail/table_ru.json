@@ -1,0 +1,19 @@
+{
+  "id": "table",
+  "name": "Письменный стол MokuTable.1",
+  "price": {
+    "amount": 15000,
+    "currency": "RUB"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/table_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/table_2.jpg"
+  ],
+  "description": "MokuTable.1 — загадочный и гордый предмет интерьера, завоевать его доверие непросто! Надеемся, он позаботится о комфорте нашей заказчицы и привнесёт в интерьер немного эстетики. Ведь наши клиенты предпочитают видеть в повседневной жизни красоту и благополучие.",
+  "suits": [
+    "ширина 135 см / глубина 70 см / высота 75 см",
+    "4 ящика"
+  ]
+}

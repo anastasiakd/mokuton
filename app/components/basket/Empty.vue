@@ -1,6 +1,6 @@
 <script setup lang="ts">
 function goToCatalog() {
-    navigateTo({name: 'catalog'});
+    navigateTo({name: 'product-catalog'});
 }
 </script>
 

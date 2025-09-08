@@ -16,7 +16,7 @@ async function submitOrder(customer) {
     });
 
     useOrderStore().submitOrder({customer});
-    navigateTo({name: 'catalog'});
+    navigateTo({name: 'product-catalog'});
 }
 </script>
 

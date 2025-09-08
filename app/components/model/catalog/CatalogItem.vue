@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {numberUtils} from '~~/shared/utils';
+import {numberUtils} from '#shared/utils';
 
 const {formatPrice} = numberUtils;
 
@@ -44,7 +44,7 @@ function goToProduct() {
 </template>
 
 <style lang="scss" scoped>
-@use "~/assets/scss/abstracts/variables" as *;
+@use "~/assets/scss/abstracts/mixins" as *;
 
 .product {
     li {

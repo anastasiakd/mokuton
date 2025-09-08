@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import Filter from './Filter.vue';
+import Catalog from './Catalog.vue';
+
 const catalogStore = useCatalogStore();
 const {initCatalog} = catalogStore;
 
@@ -6,10 +9,10 @@ initCatalog();
 </script>
 
 <template>
-    <CatalogFilter/>
+    <Filter/>
 
     <div class="products-container">
-        <CatalogProducts/>
+        <Catalog/>
     </div>
 </template>
 
