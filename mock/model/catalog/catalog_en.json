@@ -6,7 +6,7 @@
       "amount": 350,
       "currency": "USD"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/honeycombs_bookcase_0.jpg",
     "category": "bookcase"
   },
   {
@@ -16,7 +16,7 @@
       "amount": 200,
       "currency": "USD"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/table_0.jpg",
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/table_0.jpg",
     "category": "table"
   },
   {
@@ -26,7 +26,7 @@
       "amount": 90,
       "currency": "USD"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_0.jpg",
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_0.jpg",
     "category": "bookcase"
   },
   {
@@ -36,7 +36,7 @@
       "amount": 330,
       "currency": "USD"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/picklers_triangle.jpg",
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/picklers_triangle.jpg",
     "category": "toys"
   },
   {
@@ -46,6 +46,6 @@
       "amount": 15000,
       "currency": "USD"
     },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/005.jpg"
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/models/005.jpg"
   }
 ]

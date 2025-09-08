@@ -5,13 +5,13 @@
     "amount": 90,
     "currency": "USD"
   },
-  "icon": "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_0.jpg",
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_0.jpg",
   "images": [
-    "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_0.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_1.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_2.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_3.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/nightstand_2_drawers_4.jpg"
+    "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_0.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_2.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_3.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/models/nightstand_2_drawers_4.jpg"
   ],
   "description": "Nightstand with 2 drawers",
   "suits": [

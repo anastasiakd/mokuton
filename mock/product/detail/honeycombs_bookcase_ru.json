@@ -5,11 +5,11 @@
     "amount": 15000,
     "currency": "RUB"
   },
-  "icon": "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/products/honeycombs_bookcase_0.jpg",
   "images": [
-    "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_0.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_1.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/honeycombs_bookcase_2.jpg"
+    "http://localhost:3000/_nuxt/assets/images/external/products/honeycombs_bookcase_0.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/honeycombs_bookcase_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/honeycombs_bookcase_2.jpg"
   ],
   "description": "Шкаф \"Пчелиные соты\" станет уникальным и неповторимым предметом украшения вашей квартиры. Он обладает выразительным внешним видом и необыкновенной формой. Этот предмет мебели можно использовать как книжную полку, комод или просто как место для хранения.",
   "suits": []
