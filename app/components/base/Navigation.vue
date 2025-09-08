@@ -19,10 +19,6 @@ const items = computed(() => [
     {
         label: $t('nav-reviews'),
         to: '/reviews',
-    },
-    {
-        label: $t('nav-about'),
-        to: '/about',
     }
 ]);
 </script>
