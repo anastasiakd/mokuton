@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {numberUtils} from '#shared/utils';
+import ModelBuy from './ModelBuy.client.vue';
 
 const {formatPrice} = numberUtils;
 
@@ -68,7 +69,7 @@ const {product} = defineProps({
                     {{ formatPrice(product.price) }}
                 </h1>
 
-                <ProductBuy :product="product"/>
+                <ModelBuy :product="product"/>
             </div>
         </div>
     </div>

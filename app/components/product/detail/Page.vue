@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Product from './Product.vue';
+
 const {id} = defineProps({
     id: {
         type: String,

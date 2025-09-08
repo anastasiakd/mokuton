@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Model from './Model.vue';
+
 const {id} = defineProps({
     id: {
         type: String,

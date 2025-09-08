@@ -12,7 +12,7 @@ const {product} = defineProps({
 
 function goToProduct() {
     navigateTo({
-        name: 'catalog-product-id',
+        name: 'product-id',
         params: {id: product.id},
     });
 }

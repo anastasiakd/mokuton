@@ -30,7 +30,7 @@ watch(pending, newPending => {
 
 function goToCatalogProduct(basketProduct: BasketProduct) {
     navigateTo({
-        name: 'catalog-product-id',
+        name: 'product-id',
         params: {id: basketProduct.id},
     });
 }

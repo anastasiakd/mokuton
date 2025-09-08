@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {numberUtils} from '#shared/utils';
+import ProductBuy from './ProductBuy.client.vue';
 
 const {formatPrice} = numberUtils;
 
