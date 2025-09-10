@@ -71,6 +71,7 @@ export const useBasketStore = defineStore('basket', () => {
 
     async function init() {
         if (products.value.length > 0) {
+            pending.value = false;
             return;
         }
 

@@ -2,7 +2,7 @@
   "id": "honeycombs_bookcase",
   "name": "Bookcase \"Honeycomb\"",
   "price": {
-    "amount": 350,
+    "amount": 100,
     "currency": "USD"
   },
   "icon": "http://localhost:3000/_nuxt/assets/images/external/models/honeycombs_bookcase_0.jpg",

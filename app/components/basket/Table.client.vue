@@ -52,7 +52,7 @@ const columns: TableColumn<BasketProduct>[] = [
                 }, 'x'),
                 h('img', {
                     src: row.original.icon,
-                    class: 'max-w-37 cursor-pointer block-highlight',
+                    class: 'max-w-30 cursor-pointer block-highlight',
                     onClick: () => goToCatalogProduct(row.original),
                 }),
                 h('div', {
@@ -73,7 +73,7 @@ const columns: TableColumn<BasketProduct>[] = [
         accessorKey: 'count',
         header: '',
         cell: ({row}) => {
-            return h('div', {class: ''}, [
+            return h('div', {class: 'max-w-20'}, [
                 h(UInputNumber, {
                     modelValue: row.original.count,
                     min: 1,

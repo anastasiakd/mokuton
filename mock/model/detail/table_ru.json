@@ -2,18 +2,13 @@
   "id": "table",
   "name": "Письменный стол MokuTable.1",
   "price": {
-    "amount": 15000,
+    "amount": 3000,
     "currency": "RUB"
   },
   "icon": "http://localhost:3000/_nuxt/assets/images/external/models/table_0.jpg",
   "images": [
-    "http://localhost:3000/_nuxt/assets/images/external/models/table_0.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/models/table_1.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/models/table_2.jpg"
+    "http://localhost:3000/_nuxt/assets/images/external/models/table_0.jpg"
   ],
-  "description": "MokuTable.1 — загадочный и гордый предмет интерьера, завоевать его доверие непросто! Надеемся, он позаботится о комфорте нашей заказчицы и привнесёт в интерьер немного эстетики. Ведь наши клиенты предпочитают видеть в повседневной жизни красоту и благополучие.",
-  "suits": [
-    "ширина 135 см / глубина 70 см / высота 75 см",
-    "4 ящика"
-  ]
+  "description": "Готовое к использованию цифровое решение для вашего проекта. 3D CAD-модель шкафа \"Пчелиные соты\" разработана с высокой точностью и вниманием к деталям, что позволяет легко интегрировать её в ваши проекты, провести инженерный анализ, подготовить чертежи или оценить возможность интеграции перед покупкой физического образца.",
+  "suits": []
 }

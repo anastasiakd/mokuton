@@ -55,9 +55,7 @@ function onBuy(customer) {
                 <UCarousel
                     v-slot="{ item }"
                     :items="model.images"
-                    dots
-                    :ui="{item: 'basis-auto'}"
-                    class="w-full mx-auto"
+                    class="w-full justify-items-center"
                 >
                     <img
                         :src="item"

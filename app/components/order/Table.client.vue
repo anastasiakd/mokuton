@@ -39,7 +39,7 @@ const columns: TableColumn<BasketProduct>[] = [
             return h('div', {class: 'flex items-center gap-3'}, [
                 h('img', {
                     src: row.original.icon,
-                    class: 'max-w-37',
+                    class: 'max-w-30',
                 }),
                 h('div', {}, [
                     h('h3', {class: 'basket-product-title'}, row.original.name),
