@@ -24,18 +24,26 @@ const schema = v.object({
 
 export type OrderSchema = v.InferOutput<typeof schema>;
 
-const state = reactive({
-    name: '',
-    email: '',
-    phonePrefix: {
-        label: '',
-        code: '',
-    },
-    phoneNumber: '',
-    comment: '',
-});
+export default () => {
+    const DEFAULT_STATE = {
+        name: '',
+        email: '',
+        phonePrefix: {
+            label: '',
+            code: '',
+        },
+        phoneNumber: '',
+        comment: '',
+    };
+    const state = ref({...DEFAULT_STATE});
 
-export {
-    schema,
-    state,
+    function clear() {
+        state.value = {...DEFAULT_STATE,};
+    }
+
+    return {
+        clear,
+        schema,
+        state,
+    };
 };

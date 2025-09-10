@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type {FormSubmitEvent} from '@nuxt/ui';
-import {type OrderSchema, schema, state} from './form';
+import useForm, {type OrderSchema} from './useForm';
 
 const emit = defineEmits([
     'order:submit',
@@ -18,8 +18,11 @@ const phonePrefixes = computed(() => (
 ));
 phoneStore.getPhoneCodes();
 
+const {schema, state, clear} = useForm();
+
 function onSubmit(event: FormSubmitEvent<OrderSchema>) {
     emit('order:submit', event.data);
+    clear();
 }
 </script>
 
