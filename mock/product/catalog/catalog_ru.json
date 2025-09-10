@@ -30,6 +30,26 @@
     "category": ["table"]
   },
   {
+    "id": "bathroom_cabinet",
+    "name": "Шкафчик для ванной комнаты",
+    "price": {
+      "amount": 15000,
+      "currency": "RUB"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_0.jpg",
+    "category": ["bookcase"]
+  },
+  {
+    "id": "balance_board",
+    "name": "Баланс-борд",
+    "price": {
+      "amount": 4500,
+      "currency": "RUB"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/balance_board_0.jpg",
+    "category": []
+  },
+  {
     "id": "kitchen_child",
     "name": "Детская кухня",
     "price": {
@@ -48,15 +68,5 @@
     },
     "icon": "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle_0.jpg",
     "category": ["for_child"]
-  },
-  {
-    "id": "bathroom_cabinet",
-    "name": "Шкафчик для ванной комнаты",
-    "price": {
-      "amount": 15000,
-      "currency": "RUB"
-    },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_0.jpg",
-    "category": ["bookcase"]
   }
 ]

@@ -6,8 +6,10 @@
   "nav-about": "о нас",
 
   "button-buy": "Купить",
+  "button-order": "Заказать",
   "button-catalog": "Перейти в каталог",
 
+  "catalog_filter-all": "Все",
   "catalog_product-suits": "Проверьте, подходит ли вам:",
 
   "basket_empty-title": "Ваша корзина сейчас пуста.",

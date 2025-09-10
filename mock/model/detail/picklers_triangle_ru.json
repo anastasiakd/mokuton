@@ -1,0 +1,14 @@
+{
+  "id": "picklers_triangle",
+  "name": "Треугольник Пиклера",
+  "price": {
+    "amount": 5000,
+    "currency": "RUB"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/models/picklers_triangle_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/models/picklers_triangle_0.jpg"
+  ],
+  "description": "Готовое к использованию цифровое решение для вашего проекта. 3D CAD-модель треугольника Пиклера разработана с высокой точностью и вниманием к деталям, что позволяет легко интегрировать её в ваши проекты, провести инженерный анализ, подготовить чертежи или оценить возможность интеграции перед покупкой физического образца.",
+  "suits": []
+}

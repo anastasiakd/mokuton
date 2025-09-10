@@ -7,8 +7,8 @@
   },
   "icon": "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_0.jpg",
   "images": [
-    "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_0.jpg",
-    "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_1.jpg"
+    "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/armchair_bw_2.jpg"
   ],
   "description": "The armchair Black&White will fit perfectly into a modern interior, giving comfort and a sense of style. A universal model for arranging a cozy corner in the living room, cafe or in the country.",
   "suits": []

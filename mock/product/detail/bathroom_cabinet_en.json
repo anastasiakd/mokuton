@@ -1,0 +1,18 @@
+{
+  "id": "bathroom_cabinet",
+  "name": "Bathroom cabinet",
+  "price": {
+    "amount": 350,
+    "currency": "USD"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_2.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_3.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_4.jpg"
+  ],
+  "description": "Our wall cabinet is more than just a storage system. It is the key to an organized and beautiful space in the bathroom. No more hiding jars of creams, hygiene products and small accessories in disarray. Everything will be neatly arranged on shelves and safely hidden behind a stylish door.",
+  "suits": [
+  ]
+}

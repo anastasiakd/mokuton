@@ -31,6 +31,26 @@
     "category": ["table"]
   },
   {
+    "id": "bathroom_cabinet",
+    "name": "Bathroom cabinet",
+    "price": {
+      "amount": 350,
+      "currency": "USD"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_0.jpg",
+    "category": ["bookcase"]
+  },
+  {
+    "id": "balance_board",
+    "name": "Balance board",
+    "price": {
+      "amount": 50,
+      "currency": "USD"
+    },
+    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/balance_board_0.jpg",
+    "category": []
+  },
+  {
     "id": "kitchen_child",
     "name": "Children's kitchen",
     "price": {
@@ -49,15 +69,5 @@
     },
     "icon": "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle_0.jpg",
     "category": ["for_child"]
-  },
-  {
-    "id": "bathroom_cabinet",
-    "name": "Bathroom cabinet",
-    "price": {
-      "amount": 350,
-      "currency": "USD"
-    },
-    "icon": "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_0.jpg",
-    "category": ["bookcase"]
   }
 ]

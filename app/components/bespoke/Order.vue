@@ -106,7 +106,7 @@ function onSubmit(event: FormSubmitEvent<OrderSchema>) {
                         type="submit"
                         size="xl"
                     >
-                        Заказать
+                        {{ $t('button-order') }}
                     </UButton>
                 </div>
             </UForm>

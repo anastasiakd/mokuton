@@ -1,0 +1,14 @@
+{
+  "id": "picklers_triangle",
+  "name": "Pickler`s triangle",
+  "price": {
+    "amount": 100,
+    "currency": "USD"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/models/picklers_triangle_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/models/picklers_triangle_0.jpg"
+  ],
+  "description": "A ready-to-use digital solution for your project. The 3D CAD model of the Pickler`s triangle is designed with high precision and attention to detail, allowing you to easily integrate it into your projects, conduct engineering analysis, prepare drawings or evaluate the possibility of integration before purchasing a physical sample.",
+  "suits": []
+}

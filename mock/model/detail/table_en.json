@@ -9,9 +9,6 @@
   "images": [
     "http://localhost:3000/_nuxt/assets/images/external/models/table_0.jpg"
   ],
-  "description": "MokuTable.1 — is a mysterious and proud piece of furniture – it’s not so easy to win it over! We hope it cares about the comfort of our customer and will bring a bit of aesthetics to the interior. Our clients prefer to see only beauty and prosperity in everyday life.",
-  "suits": [
-    "width 135 cm / depth 70 cm / height 75 cm",
-    "4 drawers"
-  ]
+  "description": "A ready-to-use digital solution for your project. The 3D CAD model of the table MokuTable.1 is designed with high precision and attention to detail, allowing you to easily integrate it into your projects, conduct engineering analysis, prepare drawings or evaluate the possibility of integration before purchasing a physical sample.",
+  "suits": []
 }

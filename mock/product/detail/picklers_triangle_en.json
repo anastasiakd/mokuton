@@ -1,0 +1,20 @@
+{
+  "id": "picklers_triangle",
+  "name": "Pickler`s triangle",
+  "price": {
+    "amount": 330,
+    "currency": "USD"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle_2.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/picklers_triangle_3.jpg"
+  ],
+  "description": "Our 3-in-1 set is not just furniture, but a well-thought-out developmental environment for children from 6 months to 5-6 years. Each element plays its role in developing your child's coordination, strength, self-confidence and gross motor skills.",
+  "suits": [
+    "Pickler Triangle: A strong and stable base with comfortable and safe rungs for first ascents and confident climbing.",
+    "Double-sided slide/climbing wall: One side is a smooth slide for fun sliding, while the other side is a surface with special grips for climbing, just like a real climbing wall.",
+    "Arch: On one side it is a fun swing, and on the other side the inverted arch turns into a tunnel or a low bridge for crossing."
+  ]
+}

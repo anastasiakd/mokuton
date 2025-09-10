@@ -6,8 +6,10 @@
   "nav-about": "about",
 
   "button-buy": "Buy",
+  "button-order": "Order",
   "button-catalog": "Go to catalog",
 
+  "catalog_filter-all": "All",
   "catalog_product-suits": "Check if it suits you:",
 
   "basket_empty-title": "Your cart is currently empty.",

@@ -1,0 +1,20 @@
+{
+  "id": "balance_board",
+  "name": "Balance board",
+  "price": {
+    "amount": 50,
+    "currency": "USD"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/products/balance_board_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/products/balance_board_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/balance_board_2.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/balance_board_3.jpg"
+  ],
+  "description": "Knowing how to balance is an important life skill. It takes years of experience to learn. But no! You can practice on a balance board. You stand up and learn how to balance. When that becomes easy for you, you make it more difficult - roll a ball through a built-in labyrinth. And by adding dumbbells for weight, you turn board exercises into a full-fledged workout.",
+  "suits": [
+    "Dimensions of children's balance board: height from the floor - 5.5 cm, circle diameter - 27 cm, maximum length - 35.5 cm.",
+    "Dimensions of an adult balance board: height from the floor - 7 cm, diameter - 40.5 cm, maximum length - 53.5 cm.",
+    "The set includes: balance board, ball, storage case, exercise booklet."
+  ]
+}

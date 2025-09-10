@@ -1,0 +1,18 @@
+{
+  "id": "bathroom_cabinet",
+  "name": "Шкафчик для ванной комнаты",
+  "price": {
+    "amount": 15000,
+    "currency": "RUB"
+  },
+  "icon": "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_0.jpg",
+  "images": [
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_1.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_2.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_3.jpg",
+    "http://localhost:3000/_nuxt/assets/images/external/products/bathroom_cabinet_4.jpg"
+  ],
+  "description": "Наш настенный шкафчик — это больше, чем просто система хранения. Это ключ к организованному и красивому пространству в ванной комнате. Больше не нужно прятать баночки с кремами, средства гигиены и мелкие аксессуары в беспорядке. Всё будет аккуратно разложено по полочкам и надежно спрятано за стильной дверцей.",
+  "suits": [
+  ]
+}

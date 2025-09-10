@@ -5,7 +5,7 @@ const {
     filterCategory,
 } = storeToRefs(productStore);
 
-function onChooseCategory(category: CatalogCategory | undefined) {
+function onChooseCategory(category: CatalogCategory | null) {
     productStore.setFilter(category);
 }
 </script>
@@ -16,9 +16,9 @@ function onChooseCategory(category: CatalogCategory | undefined) {
             <li
                 class="cursor-pointer"
                 :class="{'font-semibold': !filterCategory}"
-                @click="onChooseCategory(undefined)"
+                @click="onChooseCategory(null)"
             >
-                Все
+                {{ $t('catalog_filter-all') }}
             </li>
 
             <li
