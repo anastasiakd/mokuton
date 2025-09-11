@@ -20,6 +20,7 @@ function goToProduct() {
 
 <template>
     <li
+        v-testid="`catalog-product-${product.id}`"
         class="product cursor-pointer"
         @click="goToProduct"
     >

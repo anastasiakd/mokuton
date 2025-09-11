@@ -15,6 +15,7 @@ const {product} = defineProps({
 <template>
     <div
         v-if="product"
+        v-testid="`product-detail-${product.id}`"
         class="product__container pt-8"
     >
         <div class="product__header">

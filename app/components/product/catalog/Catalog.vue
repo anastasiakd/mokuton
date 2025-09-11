@@ -8,7 +8,10 @@ const {
 </script>
 
 <template>
-    <div class="products-catalog pt-8 pb-8">
+    <div
+        v-testid="'products-catalog'"
+        class="products-catalog pt-8 pb-8"
+    >
         <ul class="products columns-3">
             <CatalogItem
                 v-for="product in products"
