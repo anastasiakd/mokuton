@@ -122,9 +122,9 @@ const columns: TableColumn<BasketProduct>[] = [
                 Оформить заказ
             </UButton>
         </div>
-
-        <BasketEmpty v-if="!pending && isEmpty"/>
     </section>
+
+    <BasketEmpty v-if="!pending && isEmpty"/>
 </template>
 
 <style scoped>
