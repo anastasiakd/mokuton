@@ -8,7 +8,7 @@ function finishPending() {
 
 <template>
     <div
-        data-testid="'basket-container'"
+        v-testid="'basket-container'"
         class="basket-container"
     >
         <BaseSpinner v-if="pending"/>

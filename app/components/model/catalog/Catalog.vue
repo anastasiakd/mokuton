@@ -9,7 +9,7 @@ const {
 
 <template>
     <div
-        v-testid="'products-catalog'"
+        v-testid="'models-catalog'"
         class="models-catalog pt-8"
     >
         <ul class="models columns-3">

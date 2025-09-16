@@ -19,7 +19,7 @@ function onBuy() {
 
 <template>
     <UButton
-        data-testid="'button-buy'"
+        v-testid="'button-buy'"
         trailing-icon="i-lucide-arrow-right"
         size="xl"
         block
