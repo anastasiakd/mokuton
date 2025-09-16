@@ -20,6 +20,7 @@ function goToModel() {
 
 <template>
     <li
+        v-testid="`catalog-model-${model.id}`"
         class="model cursor-pointer"
         @click="goToModel"
     >

@@ -57,6 +57,7 @@ const columns: TableColumn<BasketProduct>[] = [
                 }),
                 h('div', {
                     class: 'text-highlight cursor-pointer',
+                    'data-testid': `basket-product-${row.original.id}`,
                     onClick: () => goToCatalogProduct(row.original),
                 }, [
                     h('h3', {class: 'basket-product-title'}, row.original.name),

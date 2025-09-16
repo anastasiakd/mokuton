@@ -7,7 +7,10 @@ function finishPending() {
 </script>
 
 <template>
-    <div class="basket-container">
+    <div
+        data-testid="'basket-container'"
+        class="basket-container"
+    >
         <BaseSpinner v-if="pending"/>
 
         <BasketTable

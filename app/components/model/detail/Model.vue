@@ -40,6 +40,7 @@ function onBuy(customer) {
 <template>
     <div
         v-if="model"
+        v-testid="`model-detail-${model.id}`"
         class="model__container pt-8"
     >
         <div class="model__header">
